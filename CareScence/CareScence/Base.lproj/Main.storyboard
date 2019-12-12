@@ -8,20 +8,77 @@
     </dependencies>
     <scenes>
         <!--Exercise-->
+        <scene sceneID="gIT-9V-iXt">
+            <objects>
+                <navigationController id="99e-Nc-qNW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Exercise" image="exercises" id="AS8-mk-ZtX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="c34-6L-jfS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tGa-2T-A67" kind="relationship" relationship="rootViewController" id="lFR-NZ-aPq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olJ-1U-2Lt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1022" y="1208"/>
+        </scene>
+        <!--Exercise-->
         <scene sceneID="jgs-SU-hvf">
             <objects>
                 <viewController id="tGa-2T-A67" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QvR-kL-hR4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zRI-p3-eyW">
+                                <rect key="frame" x="10" y="98" width="394" height="705"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cnZ-UL-Z9E">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cnZ-UL-Z9E" id="PjJ-zc-Zwv">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zRI-p3-eyW" firstAttribute="leading" secondItem="31s-7q-mF3" secondAttribute="leading" constant="10" id="OKI-XC-0sS"/>
+                            <constraint firstItem="zRI-p3-eyW" firstAttribute="top" secondItem="31s-7q-mF3" secondAttribute="top" constant="10" id="ii4-xR-SDr"/>
+                            <constraint firstItem="31s-7q-mF3" firstAttribute="bottom" secondItem="zRI-p3-eyW" secondAttribute="bottom" constant="10" id="pao-WM-jwF"/>
+                            <constraint firstItem="31s-7q-mF3" firstAttribute="trailing" secondItem="zRI-p3-eyW" secondAttribute="trailing" constant="10" id="vpA-Jy-Klz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="31s-7q-mF3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exercise" image="exercises" id="r7s-Ub-7MG"/>
+                    <navigationItem key="navigationItem" title="Exercise" id="Xnm-dH-PG6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXq-ac-02k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-531" y="297"/>
+            <point key="canvasLocation" x="-3" y="1220"/>
+        </scene>
+        <!--Achievements-->
+        <scene sceneID="saA-aH-sXc">
+            <objects>
+                <navigationController id="WpE-L6-1UZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Achievements" image="trophies" id="Pvi-6Y-2xn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="yoM-pk-0PU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vaF-fy-hKw" kind="relationship" relationship="rootViewController" id="nji-Vh-r5b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4C-Vh-GRf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="-1000"/>
         </scene>
         <!--Achievements-->
         <scene sceneID="LaZ-cB-Pa1">
@@ -34,10 +91,11 @@
                         <viewLayoutGuide key="safeArea" id="yZ5-B5-c6Q"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Achievements" image="trophies" id="SRE-jv-WQc"/>
+                    <navigationItem key="navigationItem" title="Achievements" id="6bL-hK-kw0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="en6-wb-eLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-172" y="-325"/>
+            <point key="canvasLocation" x="794" y="-1224"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fIE-X8-aHH">
@@ -51,9 +109,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="oav-jb-8Np" kind="relationship" relationship="viewControllers" id="iBK-xn-5bZ"/>
-                        <segue destination="vaF-fy-hKw" kind="relationship" relationship="viewControllers" id="AMD-zo-bfm"/>
-                        <segue destination="tGa-2T-A67" kind="relationship" relationship="viewControllers" id="MkW-1g-a53"/>
-                        <segue destination="yP1-z2-4bQ" kind="relationship" relationship="viewControllers" id="ph5-8F-pZP"/>
+                        <segue destination="WpE-L6-1UZ" kind="relationship" relationship="viewControllers" id="fy4-c5-rSk"/>
+                        <segue destination="99e-Nc-qNW" kind="relationship" relationship="viewControllers" id="o7y-de-1hC"/>
+                        <segue destination="5bh-PH-PNU" kind="relationship" relationship="viewControllers" id="EXf-iB-Vli"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcg-rp-3HY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -80,7 +138,6 @@
         <!--Overview-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -248,30 +305,62 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="Mfy-rt-O2K"/>
                     <navigationItem key="navigationItem" title="Overview" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="d1s-Ju-GwE"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1376.8115942028987" y="198.88392857142856"/>
         </scene>
         <!--News-->
-        <scene sceneID="nb0-Sj-Yj7">
+        <scene sceneID="NR2-is-lBl">
             <objects>
-                <viewController id="yP1-z2-4bQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fIj-sO-cSP">
+                <navigationController id="5bh-PH-PNU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="news" id="8fv-1a-p4P"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="uWr-kb-bCn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="raP-wu-zrr" kind="relationship" relationship="rootViewController" id="VSu-Ar-mLg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEc-m4-tOE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="-432"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="7nv-MZ-4oS">
+            <objects>
+                <tableViewController id="raP-wu-zrr" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yiF-mx-YpW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="DTW-9E-E4o"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="News" image="trophies" id="ZBu-hc-bzL"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Zj-aO-Ejm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fFI-Dg-TfY">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fFI-Dg-TfY" id="4cZ-vg-tjf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="raP-wu-zrr" id="tOf-QY-hZJ"/>
+                            <outlet property="delegate" destination="raP-wu-zrr" id="wmO-Rx-ILD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="News" largeTitleDisplayMode="always" id="oo7-ek-gVy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5P-LH-518" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="-482"/>
+            <point key="canvasLocation" x="1042" y="-485"/>
         </scene>
     </scenes>
     <resources>
         <image name="emergency-contact" width="236" height="236"/>
         <image name="exercises" width="34" height="34"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="news" width="26" height="26"/>
         <image name="pill" width="512" height="512"/>
         <image name="trophies" width="28" height="28"/>
         <image name="walk-analysis" width="985" height="984"/>
