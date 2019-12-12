@@ -41,10 +41,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
           
-        notification("Meal Time", "Most important meal of the day! BREAKFAST!!!", 12, 06)
-        notification("Meal Time", "Its time for lunch", 12, 07)
-        notification("Meal Time", "Its time for snack", 12, 08)
-        notification("Meal Time", "Its time for dinner", 12, 09)
+        notification("Meal Time", "Most important meal of the day! BREAKFAST!!!", 8, 30)
+        notification("Meal Time", "Its time for lunch", 12, 30)
+        notification("Meal Time", "Its time for snack", 16, 30)
+        notification("Meal Time", "Its time for dinner", 19, 30)
+        
+        notification("Time to take your meds!", "Don`t forget to take care of your health", 10, 30)
+        notification("Move your body!", "Did you do your exercise today", 14, 30)
         
     }
     func notification(_ title: String, _ body: String, _ hour: Int, _ minutes: Int){
