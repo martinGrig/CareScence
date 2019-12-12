@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBAction func sendNotification(_ sender: Any) {
         let content = UNMutableNotificationContent()
-          content.title = "Weekly Staff Meeting"
-          content.body = "Every Tuesday at 2pm"
+          content.title = "Meal time"
+          content.body = "The most important meal of the day! BREAKFAST!!!"
           
           // Configure the recurring date.
           var dateComponents = DateComponents()
@@ -46,16 +46,16 @@ class ViewController: UIViewController {
             // Enable or disable features based on authorization.
         }
           let content = UNMutableNotificationContent()
-          content.title = "Weekly Staff Meeting"
-          content.body = "Every Tuesday at 2pm"
+          content.title = "Meal Time"
+          content.body = "It is your lunch time"
           
           // Configure the recurring date.
           var dateComponents = DateComponents()
           dateComponents.calendar = Calendar.current
 
           //dateComponents.weekday = 5  // 3 = Tuesday
-          dateComponents.hour = 11    // hours
-          dateComponents.minute = 17   // minutes
+          dateComponents.hour = 12   // hours
+          dateComponents.minute = 30   // minutes
              
           // Create the trigger as a repeating event.
           let trigger = UNCalendarNotificationTrigger(
