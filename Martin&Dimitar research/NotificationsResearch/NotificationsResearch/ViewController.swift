@@ -40,31 +40,40 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+          
+        notification("Meal Time", "Most important meal of the day! BREAKFAST!!!", 12, 06)
+        notification("Meal Time", "Its time for lunch", 12, 07)
+        notification("Meal Time", "Its time for snack", 12, 08)
+        notification("Meal Time", "Its time for dinner", 12, 09)
+        
+    }
+    func notification(_ title: String, _ body: String, _ hour: Int, _ minutes: Int){
+        
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound]) { granted, error in
             // Enable or disable features based on authorization.
         }
-          let content = UNMutableNotificationContent()
-          content.title = "Meal Time"
-          content.body = "It is your lunch time"
+        
+        let lunchContent = UNMutableNotificationContent()
+          lunchContent.title = title
+          lunchContent.body = body
           
           // Configure the recurring date.
-          var dateComponents = DateComponents()
-          dateComponents.calendar = Calendar.current
+          var lunchDateComponents = DateComponents()
+          lunchDateComponents.calendar = Calendar.current
 
           //dateComponents.weekday = 5  // 3 = Tuesday
-          dateComponents.hour = 12   // hours
-          dateComponents.minute = 30   // minutes
+          lunchDateComponents.hour = hour   // hours
+          lunchDateComponents.minute = minutes   // minutes
              
           // Create the trigger as a repeating event.
           let trigger = UNCalendarNotificationTrigger(
-                   dateMatching: dateComponents, repeats: true)
+                   dateMatching: lunchDateComponents, repeats: true)
         
         // Create the request
         let uuidString = UUID().uuidString
         let request = UNNotificationRequest(identifier: uuidString,
-                    content: content, trigger: trigger)
+                    content: lunchContent, trigger: trigger)
 
         // Schedule the request with the system.
         let notificationCenter = UNUserNotificationCenter.current()
@@ -73,6 +82,7 @@ class ViewController: UIViewController {
               // Handle any errors.
            }
         }
+        
     }
 
 
