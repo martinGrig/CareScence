@@ -33,31 +33,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" rowHeight="140" id="T97-Fg-BHZ" customClass="ExerciseTableViewCell" customModule="CareScence" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="140"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" rowHeight="108" id="T97-Fg-BHZ" customClass="ExerciseTableViewCell" customModule="CareScence" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T97-Fg-BHZ" id="yBG-rz-pYI">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T97-Fg-BHZ" id="yBG-rz-pYI">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AUO-m2-zbG">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Fc-hS-6Tm">
-                                                    <rect key="frame" x="88.5" y="0.0" width="237" height="140"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="3Fc-hS-6Tm" firstAttribute="leading" secondItem="AUO-m2-zbG" secondAttribute="leading" constant="88.5" id="8r6-30-Hfx"/>
-                                                <constraint firstAttribute="trailing" secondItem="3Fc-hS-6Tm" secondAttribute="trailing" constant="88.5" id="nHK-a7-2bW"/>
-                                            </constraints>
-                                        </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Fc-hS-6Tm">
+                                            <rect key="frame" x="25" y="-249" width="364" height="606"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="1000"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="AUO-m2-zbG" firstAttribute="top" secondItem="yBG-rz-pYI" secondAttribute="top" id="4GF-C6-nxa"/>
-                                        <constraint firstAttribute="bottom" secondItem="AUO-m2-zbG" secondAttribute="bottom" id="Ba1-uE-VSP"/>
-                                        <constraint firstItem="AUO-m2-zbG" firstAttribute="leading" secondItem="yBG-rz-pYI" secondAttribute="leading" id="Okf-Al-LuG"/>
-                                        <constraint firstAttribute="trailing" secondItem="AUO-m2-zbG" secondAttribute="trailing" id="ZX7-eI-OQ0"/>
+                                        <constraint firstItem="3Fc-hS-6Tm" firstAttribute="centerX" secondItem="yBG-rz-pYI" secondAttribute="centerX" id="EPS-fG-Z2j"/>
+                                        <constraint firstItem="3Fc-hS-6Tm" firstAttribute="centerY" secondItem="yBG-rz-pYI" secondAttribute="centerY" id="GGr-j9-Wnw"/>
+                                        <constraint firstItem="3Fc-hS-6Tm" firstAttribute="top" secondItem="yBG-rz-pYI" secondAttribute="topMargin" constant="-260" id="gbV-JF-8jv"/>
+                                        <constraint firstItem="3Fc-hS-6Tm" firstAttribute="leading" secondItem="yBG-rz-pYI" secondAttribute="leadingMargin" constant="5" id="kyG-0d-tdl"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
