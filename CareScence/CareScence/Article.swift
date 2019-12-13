@@ -16,5 +16,6 @@ struct Article{
     let title: String
     let author: String
     let photo: UIImage
+    let url: String
 }
 

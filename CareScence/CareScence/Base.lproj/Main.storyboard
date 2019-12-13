@@ -380,6 +380,7 @@
                                     <outlet property="Author" destination="h8A-Rq-FFd" id="hsm-Uf-5qX"/>
                                     <outlet property="ImageView" destination="6eS-2h-Ufe" id="TzW-4g-BmQ"/>
                                     <outlet property="Title" destination="Rlw-7o-UIS" id="ZXp-gj-b29"/>
+                                    <segue destination="yid-EI-Gc8" kind="show" id="q6N-gf-68M"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -394,6 +395,42 @@
             </objects>
             <point key="canvasLocation" x="889.85507246376824" y="-449.33035714285711"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="SCm-3n-hG4">
+            <objects>
+                <viewController id="yid-EI-Gc8" customClass="WebViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcx-vn-Wyc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atF-Mz-3GY">
+                                <rect key="frame" x="0.0" y="95" width="414" height="718"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hRI-d5-pRM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BSc-IR-1N2">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="OIJ-cL-sMM">
+                            <connections>
+                                <action selector="SharePressed:" destination="yid-EI-Gc8" id="k4o-r8-yHq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="WbView" destination="atF-Mz-3GY" id="DTB-5E-20g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJV-Yv-jGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.521739130435" y="-449.33035714285711"/>
+        </scene>
     </scenes>
     <resources>
         <image name="emergency-contact" width="236" height="236"/>
@@ -401,6 +438,7 @@
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="news" width="26" height="26"/>
         <image name="pill" width="512" height="512"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
         <image name="trophies" width="28" height="28"/>
         <image name="walk-analysis" width="985" height="984"/>
     </resources>

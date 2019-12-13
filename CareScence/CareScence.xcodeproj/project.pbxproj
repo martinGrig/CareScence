@@ -16,6 +16,7 @@
 		3F33ECC023A398B4007091C5 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */; };
 		3F33ECC223A398CB007091C5 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */; };
 		3F33ECC623A39C14007091C5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC523A39C14007091C5 /* Article.swift */; };
+		3FA6C4E123A3A9AD00673C90 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		3F33ECC523A39C14007091C5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */,
 				3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */,
 				3F33ECC523A39C14007091C5 /* Article.swift */,
+				3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */,
 			);
 			path = CareScence;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				0EB60A5923A23ED8002BB4EF /* ViewController.swift in Sources */,
 				3F33ECC623A39C14007091C5 /* Article.swift in Sources */,
 				3F33ECC223A398CB007091C5 /* NewsTableViewCell.swift in Sources */,
+				3FA6C4E123A3A9AD00673C90 /* WebViewController.swift in Sources */,
 				0EB60A5523A23ED8002BB4EF /* AppDelegate.swift in Sources */,
 				0EB60A5723A23ED8002BB4EF /* SceneDelegate.swift in Sources */,
 			);
