@@ -15,12 +15,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="caresense-logo" translatesAutoresizingMaskIntoConstraints="NO" id="4wD-0F-JL2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="caresense-logo" translatesAutoresizingMaskIntoConstraints="NO" id="4wD-0F-JL2">
                                 <rect key="frame" x="-66" y="303" width="546" height="291"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4wD-0F-JL2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="j2l-nH-Pf2"/>
+                            <constraint firstItem="4wD-0F-JL2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ud5-gY-JIw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
