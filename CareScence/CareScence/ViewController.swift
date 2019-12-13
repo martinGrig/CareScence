@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         notification("Meal Time", "Its time for dinner", 19, 30)
         
         notification("Time to take your meds!", "Don`t forget to take care of your health", 10, 30)
-        notification("Move your body!", "Did you do your exercise today", 14, 30)
+        notification("Move your body!", "Did you do your exercise today", 14, 48)
         
     }
     func notification(_ title: String, _ body: String, _ hour: Int, _ minutes: Int){

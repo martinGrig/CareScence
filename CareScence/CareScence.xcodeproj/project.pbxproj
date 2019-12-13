@@ -16,8 +16,36 @@
 		3F33ECC023A398B4007091C5 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */; };
 		3F33ECC223A398CB007091C5 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */; };
 		3F33ECC623A39C14007091C5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC523A39C14007091C5 /* Article.swift */; };
+		3F6BE04A23A3CE950083606E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6BE04923A3CE950083606E /* NotificationCenter.framework */; };
+		3F6BE04D23A3CE950083606E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6BE04C23A3CE950083606E /* TodayViewController.swift */; };
+		3F6BE05023A3CE950083606E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BE04E23A3CE950083606E /* MainInterface.storyboard */; };
+		3F6BE05423A3CE950083606E /* CareScence Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3F6BE04723A3CE950083606E /* CareScence Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3FA6C4E123A3A9AD00673C90 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F6BE05223A3CE950083606E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EB60A4923A23ED7002BB4EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F6BE04623A3CE950083606E;
+			remoteInfo = "CareScence Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F6BE05523A3CE950083606E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3F6BE05423A3CE950083606E /* CareScence Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0EB60A5123A23ED8002BB4EF /* CareScence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareScence.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +59,11 @@
 		3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		3F33ECC523A39C14007091C5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		3F6BE04723A3CE950083606E /* CareScence Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CareScence Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6BE04923A3CE950083606E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3F6BE04C23A3CE950083606E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		3F6BE04F23A3CE950083606E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3F6BE05123A3CE950083606E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +75,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F6BE04423A3CE950083606E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6BE04A23A3CE950083606E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -49,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				0EB60A5323A23ED8002BB4EF /* CareScence */,
+				3F6BE04B23A3CE950083606E /* CareScence Widget */,
+				3F6BE04823A3CE950083606E /* Frameworks */,
 				0EB60A5223A23ED8002BB4EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB60A5123A23ED8002BB4EF /* CareScence.app */,
+				3F6BE04723A3CE950083606E /* CareScence Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +123,24 @@
 			path = CareScence;
 			sourceTree = "<group>";
 		};
+		3F6BE04823A3CE950083606E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F6BE04923A3CE950083606E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F6BE04B23A3CE950083606E /* CareScence Widget */ = {
+			isa = PBXGroup;
+			children = (
+				3F6BE04C23A3CE950083606E /* TodayViewController.swift */,
+				3F6BE04E23A3CE950083606E /* MainInterface.storyboard */,
+				3F6BE05123A3CE950083606E /* Info.plist */,
+			);
+			path = "CareScence Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +151,34 @@
 				0EB60A4D23A23ED8002BB4EF /* Sources */,
 				0EB60A4E23A23ED8002BB4EF /* Frameworks */,
 				0EB60A4F23A23ED8002BB4EF /* Resources */,
+				3F6BE05523A3CE950083606E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3F6BE05323A3CE950083606E /* PBXTargetDependency */,
 			);
 			name = CareScence;
 			productName = CareScence;
 			productReference = 0EB60A5123A23ED8002BB4EF /* CareScence.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3F6BE04623A3CE950083606E /* CareScence Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6BE05823A3CE950083606E /* Build configuration list for PBXNativeTarget "CareScence Widget" */;
+			buildPhases = (
+				3F6BE04323A3CE950083606E /* Sources */,
+				3F6BE04423A3CE950083606E /* Frameworks */,
+				3F6BE04523A3CE950083606E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CareScence Widget";
+			productName = "CareScence Widget";
+			productReference = 3F6BE04723A3CE950083606E /* CareScence Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,12 +186,15 @@
 		0EB60A4923A23ED7002BB4EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "JD Destine";
 				TargetAttributes = {
 					0EB60A5023A23ED8002BB4EF = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					3F6BE04623A3CE950083606E = {
+						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
@@ -128,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				0EB60A5023A23ED8002BB4EF /* CareScence */,
+				3F6BE04623A3CE950083606E /* CareScence Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +225,14 @@
 				0EB60A6123A23EDA002BB4EF /* LaunchScreen.storyboard in Resources */,
 				0EB60A5E23A23EDA002BB4EF /* Assets.xcassets in Resources */,
 				0EB60A5C23A23ED8002BB4EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6BE04523A3CE950083606E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6BE05023A3CE950083606E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +253,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F6BE04323A3CE950083606E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6BE04D23A3CE950083606E /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F6BE05323A3CE950083606E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F6BE04623A3CE950083606E /* CareScence Widget */;
+			targetProxy = 3F6BE05223A3CE950083606E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0EB60A5A23A23ED8002BB4EF /* Main.storyboard */ = {
@@ -177,6 +286,14 @@
 				0EB60A6023A23EDA002BB4EF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F6BE04E23A3CE950083606E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F6BE04F23A3CE950083606E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -299,6 +416,7 @@
 		0EB60A6623A23EDA002BB4EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CareScence/Info.plist;
@@ -316,6 +434,7 @@
 		0EB60A6723A23EDA002BB4EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CareScence/Info.plist;
@@ -325,6 +444,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.jd.CareScence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F6BE05623A3CE950083606E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CareScence Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.jd.CareScence.CareScence-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F6BE05723A3CE950083606E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CareScence Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.jd.CareScence.CareScence-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -347,6 +502,15 @@
 			buildConfigurations = (
 				0EB60A6623A23EDA002BB4EF /* Debug */,
 				0EB60A6723A23EDA002BB4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F6BE05823A3CE950083606E /* Build configuration list for PBXNativeTarget "CareScence Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6BE05623A3CE950083606E /* Debug */,
+				3F6BE05723A3CE950083606E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
