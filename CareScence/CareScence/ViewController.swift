@@ -8,35 +8,9 @@
 import UIKit
 import WebKit
 
-
-class ExerciseCell: UITableViewCell{
-    
-    
-    
-    
-    
-    
-}
-
-
-
-
-
-
 class ViewController: UIViewController {
-<<<<<<< HEAD
-    
-    
-=======
-
-
->>>>>>> 759f899854ad80dbc543a401aa83bb08d0abb2d8
     override func viewDidLoad() {
-         
-        
-        
         super.viewDidLoad()
-<<<<<<< HEAD
           
         notification("Meal Time", "Most important meal of the day! BREAKFAST!!!", 8, 30)
         notification("Meal Time", "Its time for lunch", 12, 30)
@@ -84,22 +58,12 @@ class ViewController: UIViewController {
         }
         
     }
-=======
         // Do any additional setup after loading the view.
-        let myUrl = URL(string: "https://www.youtube.com/watch?v=0bmE9XY3sOc")!
+        //let myUrl = URL(string: "https://www.youtube.com/watch?v=0bmE9XY3sOc")!
                 
-             let myRequest = URLRequest(url:myUrl)
+             //let myRequest = URLRequest(url:myUrl)
            //  webkit.load(myRequest)
             
             
             
-            }
-        
-        
-    
->>>>>>> 759f899854ad80dbc543a401aa83bb08d0abb2d8
-
-
-    }
-
-
+}
