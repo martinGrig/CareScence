@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="tGa-2T-A67" kind="relationship" relationship="rootViewController" id="lFR-NZ-aPq"/>
+                        <segue destination="gsn-8p-y4E" kind="relationship" relationship="rootViewController" id="BP5-e6-KgN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olJ-1U-2Lt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -25,34 +25,47 @@
             <point key="canvasLocation" x="-1210" y="1067"/>
         </scene>
         <!--Exercise-->
-        <scene sceneID="jgs-SU-hvf">
+        <scene sceneID="j4y-f2-LrQ">
             <objects>
-                <viewController id="tGa-2T-A67" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QvR-kL-hR4">
+                <tableViewController id="gsn-8p-y4E" customClass="ExerciseTableViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="est-Jj-5FK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zRI-p3-eyW">
-                                <rect key="frame" x="10" y="150" width="394" height="653"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <sections/>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="zRI-p3-eyW" firstAttribute="leading" secondItem="31s-7q-mF3" secondAttribute="leading" constant="10" id="OKI-XC-0sS"/>
-                            <constraint firstItem="zRI-p3-eyW" firstAttribute="top" secondItem="31s-7q-mF3" secondAttribute="top" constant="10" id="ii4-xR-SDr"/>
-                            <constraint firstItem="31s-7q-mF3" firstAttribute="bottom" secondItem="zRI-p3-eyW" secondAttribute="bottom" constant="10" id="pao-WM-jwF"/>
-                            <constraint firstItem="31s-7q-mF3" firstAttribute="trailing" secondItem="zRI-p3-eyW" secondAttribute="trailing" constant="10" id="vpA-Jy-Klz"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="31s-7q-mF3"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Exercise" image="exercises" id="r7s-Ub-7MG"/>
-                    <navigationItem key="navigationItem" title="Exercise" id="Xnm-dH-PG6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wXq-ac-02k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" rowHeight="145" id="E8o-Ra-6Rl" customClass="ExerciseTableViewCell" customModule="CareScence" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="145"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E8o-Ra-6Rl" id="wVM-DN-5c1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="948-gX-JgC">
+                                            <rect key="frame" x="100" y="10" width="214" height="125"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="948-gX-JgC" secondAttribute="trailing" constant="100" id="3fh-Nw-2UT"/>
+                                        <constraint firstAttribute="bottom" secondItem="948-gX-JgC" secondAttribute="bottom" constant="10" id="RPY-VM-fO7"/>
+                                        <constraint firstItem="948-gX-JgC" firstAttribute="leading" secondItem="wVM-DN-5c1" secondAttribute="leading" constant="100" id="Vqa-hP-wPi"/>
+                                        <constraint firstItem="948-gX-JgC" firstAttribute="top" secondItem="wVM-DN-5c1" secondAttribute="top" constant="10" id="zfz-e2-B5D"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ImageView" destination="948-gX-JgC" id="yMK-Jv-zkF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gsn-8p-y4E" id="HSe-1l-5w7"/>
+                            <outlet property="delegate" destination="gsn-8p-y4E" id="wpg-qa-HOh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Exercise" id="31B-Gk-3Z4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hP7-2m-g2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123" y="1067"/>
+            <point key="canvasLocation" x="24.637681159420293" y="1066.7410714285713"/>
         </scene>
         <!--Achievements-->
         <scene sceneID="saA-aH-sXc">
