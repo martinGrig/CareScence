@@ -18,14 +18,14 @@ class ExerciseTableViewController: UITableViewController {
     Exercise(title: "Hand Grip", photo: #imageLiteral(resourceName: "exercise-hand-grip"), url: "https://www.youtube.com/watch?v=kgqIdCwVivE")
     ]
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//                guard let webViewController = segue.destination as? WebViewController,
-//                    let index = tableView.indexPathForSelectedRow?.row
-//                    else {
-//                        return
-//                }
-//                webViewController.article = news[index]
-//            }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                guard let exerciseWebViewController = segue.destination as? ExerciseWebViewController,
+                    let index = tableView.indexPathForSelectedRow?.row
+                    else {
+                        return
+                }
+                exerciseWebViewController.exercise = exercises[index]
+            }
             
         }
 
