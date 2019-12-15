@@ -15,6 +15,7 @@
 		3F05C01D23A55A8300F49EA6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05C01C23A55A8300F49EA6 /* SettingsTableViewController.swift */; };
 		3F05C01F23A6996D00F49EA6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05C01E23A6996D00F49EA6 /* User.swift */; };
 		3F05C02123A6A24800F49EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F05C02023A6A24800F49EA6 /* Main.storyboard */; };
+		3F05C02323A6AD2500F49EA6 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05C02223A6AD2500F49EA6 /* AccountTableViewController.swift */; };
 		3F33ECC023A398B4007091C5 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */; };
 		3F33ECC223A398CB007091C5 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */; };
 		3F33ECC623A39C14007091C5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC523A39C14007091C5 /* Article.swift */; };
@@ -64,6 +65,7 @@
 		3F05C01C23A55A8300F49EA6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		3F05C01E23A6996D00F49EA6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3F05C02023A6A24800F49EA6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3F05C02223A6AD2500F49EA6 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		3F33ECC523A39C14007091C5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				3FA6C4EC23A3C4D800673C90 /* ExerciseTableViewController.swift */,
 				3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */,
 				3F05C01C23A55A8300F49EA6 /* SettingsTableViewController.swift */,
+				3F05C02223A6AD2500F49EA6 /* AccountTableViewController.swift */,
 			);
 			path = CareScence;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				3F05C01F23A6996D00F49EA6 /* User.swift in Sources */,
 				3FA6C4EF23A3D3B000673C90 /* ExerciseWebViewController.swift in Sources */,
+				3F05C02323A6AD2500F49EA6 /* AccountTableViewController.swift in Sources */,
 				3F33ECC023A398B4007091C5 /* NewsTableViewController.swift in Sources */,
 				0EB60A5923A23ED8002BB4EF /* ViewController.swift in Sources */,
 				3F33ECC623A39C14007091C5 /* Article.swift in Sources */,

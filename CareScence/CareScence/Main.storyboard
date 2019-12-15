@@ -392,7 +392,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="MZY-sw-cVY">
                                                             <rect key="frame" x="94" y="0.0" width="219" height="82"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Jack Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13y-GS-5ol">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Jack " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13y-GS-5ol">
                                                                     <rect key="frame" x="0.0" y="0.0" width="219" height="33.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                                     <nil key="textColor"/>
@@ -489,23 +489,34 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="u3L-OD-PKi">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GjA-Ms-GaZ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="m7i-Wb-hPm"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GjA-Ms-GaZ">
+                            <connections>
+                                <segue destination="aqh-OX-azm" kind="unwind" unwindAction="cancelToViewController:" id="ysF-G0-pYD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="m7i-Wb-hPm">
+                            <connections>
+                                <segue destination="aqh-OX-azm" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveSettingsDetail:" id="IJE-6u-6l6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="EmailLabel" destination="swK-on-lEy" id="gVZ-xi-Lae"/>
+                        <outlet property="ExerciseSwitch" destination="gFp-0o-xsb" id="XyK-mv-vAV"/>
                         <outlet property="ImageView" destination="8pT-Mp-bZ7" id="oYY-iX-dRd"/>
+                        <outlet property="MedicationSwitch" destination="Ck0-Qj-J7g" id="VZ2-Cw-xVt"/>
                         <outlet property="NameLabel" destination="13y-GS-5ol" id="z1f-7l-MPQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWs-Uo-j8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="aqh-OX-azm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="889.85507246376824" y="1846.875"/>
         </scene>
         <!--Account-->
         <scene sceneID="kqc-9o-pQ7">
             <objects>
-                <tableViewController title="Account" id="r8v-hJ-3cB" sceneMemberID="viewController">
+                <tableViewController title="Account" id="r8v-hJ-3cB" customClass="AccountTableViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="yWT-1L-JdF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -577,9 +588,26 @@
                             <outlet property="delegate" destination="r8v-hJ-3cB" id="MVg-Yo-Ly6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Account" id="HMO-W6-rn0"/>
+                    <navigationItem key="navigationItem" title="Account" id="HMO-W6-rn0">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="k8d-Xv-Rha">
+                            <connections>
+                                <segue destination="mvg-tp-NIh" kind="unwind" unwindAction="cancelToSettingsTableViewController:" id="lXQ-Ld-dJv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="LRV-Yc-y4F">
+                            <connections>
+                                <segue destination="mvg-tp-NIh" kind="unwind" identifier="SaveAccountDetail" unwindAction="saveAccountDetail:" id="NZ7-Gu-R2x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="EmailTextField" destination="7Zl-b8-6sJ" id="OL7-ae-MBS"/>
+                        <outlet property="NameTextField" destination="xeR-3S-asW" id="GsH-EZ-P8t"/>
+                        <outlet property="PasswordTextField" destination="rtX-Sf-63d" id="wVP-4h-h6J"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuj-QB-bPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="mvg-tp-NIh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1732" y="1847"/>
         </scene>
