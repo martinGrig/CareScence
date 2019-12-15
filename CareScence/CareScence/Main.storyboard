@@ -44,7 +44,7 @@
                                             <rect key="frame" x="25" y="-249" width="364" height="606"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="1000"/>
+                                                    <integer key="value" value="100"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
@@ -57,7 +57,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="ImageView" destination="3Fc-hS-6Tm" id="MHN-BM-ty3"/>
+                                    <outlet property="ImageView" destination="3Fc-hS-6Tm" id="T2w-mH-sCp"/>
                                     <segue destination="TZb-h4-1uJ" kind="show" id="ddC-Lm-uSf"/>
                                 </connections>
                             </tableViewCell>
