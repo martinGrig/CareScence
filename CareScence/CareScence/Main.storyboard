@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LB8-Xr-mjO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LB8-Xr-mjO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olJ-1U-2Lt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1210" y="775"/>
+            <point key="canvasLocation" x="-1210" y="699"/>
         </scene>
         <!--Exercise Table View Controller-->
         <scene sceneID="eg0-L2-4wD">
@@ -71,7 +71,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYr-aD-6Za" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1210" y="1479"/>
+            <point key="canvasLocation" x="-1210" y="1403"/>
         </scene>
         <!--Exercise Web View Controller-->
         <scene sceneID="zZr-Ah-4dz">
@@ -96,6 +96,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ktk-RN-50V">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="be8-5R-cec">
+                            <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="SharePressed:" destination="TZb-h4-1uJ" id="17Q-Wg-thQ"/>
                             </connections>
@@ -107,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0a-mD-xvo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1210" y="2296"/>
+            <point key="canvasLocation" x="-1210" y="2220"/>
         </scene>
         <!--Achievements-->
         <scene sceneID="saA-aH-sXc">
@@ -141,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="en6-wb-eLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123" y="-1222"/>
+            <point key="canvasLocation" x="-1210" y="-1742"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fIE-X8-aHH">
@@ -152,6 +153,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="oav-jb-8Np" kind="relationship" relationship="viewControllers" id="iBK-xn-5bZ"/>
@@ -162,7 +164,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dcg-rp-3HY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1210" y="-68"/>
+            <point key="canvasLocation" x="-1210" y="-134"/>
         </scene>
         <!--Home-->
         <scene sceneID="XwK-ha-pj5">
@@ -327,8 +329,19 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4i-dg-DwE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="190" height="200"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <connections>
+                                                            <segue destination="lnh-AE-7ga" kind="show" id="StV-5P-FkE"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.59999999999999998" green="0.69803921568627447" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES"/>
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="15"/>
@@ -351,6 +364,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="Mfy-rt-O2K"/>
                     <navigationItem key="navigationItem" title="Overview" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="d1s-Ju-GwE">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="5NX-mz-FOM">
+                            <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="jCS-2Y-uwU" kind="show" id="w9j-Cf-I8T"/>
                             </connections>
@@ -359,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="305"/>
+            <point key="canvasLocation" x="889.85507246376824" y="304.6875"/>
         </scene>
         <!--Settings-->
         <scene sceneID="U9M-Ho-S74">
@@ -433,6 +447,7 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ck0-Qj-J7g">
                                                     <rect key="frame" x="347" y="18" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAE-vh-DMV">
                                                     <rect key="frame" x="20" y="23" width="142" height="21"/>
@@ -463,6 +478,7 @@
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFp-0o-xsb">
                                                     <rect key="frame" x="347" y="18" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeY-gT-Tpu">
                                                     <rect key="frame" x="20" y="23" width="142" height="21"/>
@@ -490,11 +506,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="u3L-OD-PKi">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GjA-Ms-GaZ">
+                            <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="aqh-OX-azm" kind="unwind" unwindAction="cancelToViewController:" id="ysF-G0-pYD"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="m7i-Wb-hPm">
+                            <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="aqh-OX-azm" kind="unwind" identifier="SavePlayerDetail" unwindAction="saveSettingsDetail:" id="IJE-6u-6l6"/>
                             </connections>
@@ -511,7 +529,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWs-Uo-j8t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="aqh-OX-azm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="889.85507246376824" y="1846.875"/>
+            <point key="canvasLocation" x="-123" y="1840"/>
         </scene>
         <!--Account-->
         <scene sceneID="kqc-9o-pQ7">
@@ -590,11 +608,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Account" id="HMO-W6-rn0">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="k8d-Xv-Rha">
+                            <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="mvg-tp-NIh" kind="unwind" unwindAction="cancelToSettingsTableViewController:" id="lXQ-Ld-dJv"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="LRV-Yc-y4F">
+                            <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="mvg-tp-NIh" kind="unwind" identifier="SaveAccountDetail" unwindAction="saveAccountDetail:" id="NZ7-Gu-R2x"/>
                             </connections>
@@ -609,7 +629,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuj-QB-bPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mvg-tp-NIh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="1847"/>
+            <point key="canvasLocation" x="-123" y="2589"/>
         </scene>
         <!--News-->
         <scene sceneID="NR2-is-lBl">
@@ -626,7 +646,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEc-m4-tOE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123" y="-448"/>
+            <point key="canvasLocation" x="-123" y="-446"/>
         </scene>
         <!--News-->
         <scene sceneID="7nv-MZ-4oS">
@@ -704,7 +724,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5P-LH-518" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889.85507246376824" y="-449.33035714285711"/>
+            <point key="canvasLocation" x="-123" y="-1225"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="SCm-3n-hG4">
@@ -729,6 +749,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="BSc-IR-1N2">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="OIJ-cL-sMM">
+                            <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="SharePressed:" destination="yid-EI-Gc8" id="k4o-r8-yHq"/>
                             </connections>
@@ -740,7 +761,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJV-Yv-jGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856.521739130435" y="-449.33035714285711"/>
+            <point key="canvasLocation" x="751" y="-1225"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GUh-LE-nBi">
@@ -759,7 +780,93 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6GH-GP-WsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="1134"/>
+            <point key="canvasLocation" x="-123" y="1077"/>
+        </scene>
+        <!--EmergencyContact-->
+        <scene sceneID="NSC-wG-liB">
+            <objects>
+                <viewController title="EmergencyContact" id="lnh-AE-7ga" customClass="EmergencyContactViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eUM-et-TUn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This person will be contacted at the event of an emergency." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40h-ac-7UZ">
+                                <rect key="frame" x="20" y="88" width="374" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emergency-contact" translatesAutoresizingMaskIntoConstraints="NO" id="4BF-Lh-ndh">
+                                <rect key="frame" x="99" y="204" width="217" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jane Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w05-kJ-Tn0">
+                                <rect key="frame" x="99" y="399" width="217" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="jane.smith@domain.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMz-bE-LnD">
+                                <rect key="frame" x="113" y="468" width="188" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+31 6 12345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRl-Di-YJl">
+                                <rect key="frame" x="144" y="497" width="127" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9M-xf-XmX">
+                                <rect key="frame" x="191" y="549" width="33" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="edit">
+                                    <color key="titleColor" red="0.25490196078431371" green="0.50588235294117645" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOI-kr-KeM">
+                                <rect key="frame" x="74" y="644" width="267" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="CallEmergency:" destination="lnh-AE-7ga" eventType="touchUpInside" id="OOE-YV-cU7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2eu-SP-5hd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Emergency Contact" largeTitleDisplayMode="never" id="VGC-5Q-tMl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bUo-o3-exu">
+                            <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="EmailLabel" destination="FMz-bE-LnD" id="xrh-0s-fPO"/>
+                        <outlet property="ImageView" destination="4BF-Lh-ndh" id="x5e-bU-qJ8"/>
+                        <outlet property="NameLabel" destination="w05-kJ-Tn0" id="xmn-Re-EPY"/>
+                        <outlet property="PhoneLabel" destination="cRl-Di-YJl" id="6Wo-wQ-Are"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8RT-r9-pVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="1076.7857142857142"/>
         </scene>
     </scenes>
     <resources>

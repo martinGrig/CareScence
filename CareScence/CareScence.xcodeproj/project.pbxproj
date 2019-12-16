@@ -28,6 +28,8 @@
 		3FA6C4E923A3B86A00673C90 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4E823A3B86A00673C90 /* Exercise.swift */; };
 		3FA6C4ED23A3C4D800673C90 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4EC23A3C4D800673C90 /* ExerciseTableViewController.swift */; };
 		3FA6C4EF23A3D3B000673C90 /* ExerciseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */; };
+		3FBB15E723A7D1A2008A4505 /* EmergencyContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB15E623A7D1A2008A4505 /* EmergencyContactViewController.swift */; };
+		3FBB15EB23A7DE39008A4505 /* EmergencyContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		3FA6C4E823A3B86A00673C90 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		3FA6C4EC23A3C4D800673C90 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
 		3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseWebViewController.swift; sourceTree = "<group>"; };
+		3FBB15E623A7D1A2008A4505 /* EmergencyContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactViewController.swift; sourceTree = "<group>"; };
+		3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,12 +129,13 @@
 				3F05C01E23A6996D00F49EA6 /* User.swift */,
 				3F33ECC523A39C14007091C5 /* Article.swift */,
 				3FA6C4E823A3B86A00673C90 /* Exercise.swift */,
+				3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */,
 				0EB60A5423A23ED8002BB4EF /* AppDelegate.swift */,
 				3F05C02023A6A24800F49EA6 /* Main.storyboard */,
 				0EB60A5623A23ED8002BB4EF /* SceneDelegate.swift */,
 				0EB60A5823A23ED8002BB4EF /* ViewController.swift */,
-				0EB60A5D23A23EDA002BB4EF /* Assets.xcassets */,
 				0EB60A5F23A23EDA002BB4EF /* LaunchScreen.storyboard */,
+				0EB60A5D23A23EDA002BB4EF /* Assets.xcassets */,
 				0EB60A6223A23EDA002BB4EF /* Info.plist */,
 				3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */,
 				3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */,
@@ -140,6 +145,7 @@
 				3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */,
 				3F05C01C23A55A8300F49EA6 /* SettingsTableViewController.swift */,
 				3F05C02223A6AD2500F49EA6 /* AccountTableViewController.swift */,
+				3FBB15E623A7D1A2008A4505 /* EmergencyContactViewController.swift */,
 			);
 			path = CareScence;
 			sourceTree = "<group>";
@@ -273,8 +279,10 @@
 				3F33ECC223A398CB007091C5 /* NewsTableViewCell.swift in Sources */,
 				3FA6C4E123A3A9AD00673C90 /* WebViewController.swift in Sources */,
 				3FA6C4E923A3B86A00673C90 /* Exercise.swift in Sources */,
+				3FBB15E723A7D1A2008A4505 /* EmergencyContactViewController.swift in Sources */,
 				3FA6C4E523A3B7A900673C90 /* ExerciseTableViewCell.swift in Sources */,
 				3F05C01D23A55A8300F49EA6 /* SettingsTableViewController.swift in Sources */,
+				3FBB15EB23A7DE39008A4505 /* EmergencyContact.swift in Sources */,
 				0EB60A5523A23ED8002BB4EF /* AppDelegate.swift in Sources */,
 				3FA6C4ED23A3C4D800673C90 /* ExerciseTableViewController.swift in Sources */,
 				0EB60A5723A23ED8002BB4EF /* SceneDelegate.swift in Sources */,
