@@ -25,7 +25,7 @@ class AccountTableViewController: UITableViewController {
          let name = NameTextField.text,
          let email = EmailTextField.text,
          let password = PasswordTextField.text {
-        user = User.init(name: name, email: email, password: password,  photo: #imageLiteral(resourceName: "happy") )
+        user = User.init(name: name, email: email, password: password,  photo: #imageLiteral(resourceName: "happy") , emergencyContact: "")
      }
     
     

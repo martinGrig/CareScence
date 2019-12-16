@@ -16,13 +16,14 @@ class SettingsTableViewController: UITableViewController {
     @IBOutlet weak var ExerciseSwitch: UISwitch!
     
     
-    var account: User? = User(name: "Jack Smith", email: "j.smith@yahooo.com", password: "bunnies", photo: #imageLiteral(resourceName: "happy") )
+    var account: User? = User(name: "Jack Smith", email: "j.smith@yahooo.com", password: "bunnies", photo: #imageLiteral(resourceName: "happy") , emergencyContact: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         NameLabel.text = account!.name
         EmailLabel.text = account!.email
         ImageView.image = account!.photo
+    }
         
 
         
@@ -48,7 +49,7 @@ class SettingsTableViewController: UITableViewController {
             
             
             
-    }
+//    }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        guard let webViewController = segue.destination as? WebViewController,
@@ -75,8 +76,8 @@ extension SettingsTableViewController{
         }
         
         account = user
-//        // update the tableView
-//        let indexPath = IndexPath(row: events.count - 1, section: 0)
-//        tableView.insertRows(at: [indexPath], with: .automatic)
+        NameLabel.text = account!.name
+        EmailLabel.text = account!.email
+        ImageView.image = account!.photo
     }
 }

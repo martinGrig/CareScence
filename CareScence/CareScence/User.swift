@@ -14,6 +14,7 @@ struct User{
     var email: String
     var password: String
     let photo: UIImage
+    var emergencyContact: String
     
     mutating func changeName(name: String){
         self.name = name
@@ -23,5 +24,8 @@ struct User{
     }
     mutating func changePass(pass: String){
         self.password = pass
+    }
+    mutating func assignEmergencyContact(eContact: String){
+        self.emergencyContact = eContact
     }
 }

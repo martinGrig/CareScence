@@ -71,15 +71,12 @@ class ViewController: UIViewController {
 extension ViewController{
     @IBAction func cancelToViewController(_ segue: UIStoryboardSegue) {
     }
-    
+
     @IBAction func saveSettingsDetail(_ segue: UIStoryboardSegue) {
-        
-//        guard let settingsViewController = segue.source as? SettingsTableViewController,
-//            let setting = settingsViewController.user else {
-//                return
-//        }
-//        // update the tableView
-//        let indexPath = IndexPath(row: events.count - 1, section: 0)
-//        tableView.insertRows(at: [indexPath], with: .automatic)
+
+        guard let settingsViewController = segue.source as? SettingsTableViewController,
+            let setting = settingsViewController.account else {
+                return
+        }
     }
 }
