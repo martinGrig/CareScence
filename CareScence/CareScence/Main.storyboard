@@ -113,19 +113,92 @@
         <!--Achievments-->
         <scene sceneID="pph-UM-WXv">
             <objects>
-                <tableViewController id="qFI-Ie-zU6" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vyp-cF-5Hk">
+                <tableViewController id="qFI-Ie-zU6" customClass="AchievmentTableViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vyp-cF-5Hk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="EIA-ms-ypD">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AchievmentCell" rowHeight="150" id="EIA-ms-ypD" customClass="AchievmentTableViewCell" customModule="CareScence" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EIA-ms-ypD" id="opL-cR-ZhC">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cTY-JJ-Ss2">
+                                            <rect key="frame" x="20" y="11" width="374" height="128"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x0N-ty-5gR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="131" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="131" id="C89-TM-OlA"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="131" id="RWH-wa-sFz"/>
+                                                        <constraint firstAttribute="height" constant="128" id="pjK-vx-O1T"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="zfq-B2-NAF">
+                                                    <rect key="frame" x="139" y="0.0" width="235" height="119.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJA-6X-Gbk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="23"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j64-ky-tPN">
+                                                            <rect key="frame" x="0.0" y="55" width="42" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vJ0-MZ-XOS">
+                                                            <rect key="frame" x="0.0" y="107.5" width="235" height="12"/>
+                                                            <subviews>
+                                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="hvj-yx-EMW">
+                                                                    <rect key="frame" x="0.0" y="5.5" width="170" height="2.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="170" id="Niu-Ei-UDh"/>
+                                                                        <constraint firstAttribute="height" constant="1.5" id="txw-CG-uan"/>
+                                                                    </constraints>
+                                                                    <color key="progressTintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="trackTintColor" red="0.0578713613" green="0.13956014550000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="15"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </progressView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h11-iq-bNv">
+                                                                    <rect key="frame" x="185" y="0.0" width="50" height="12"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                    <color key="textColor" red="0.0578713613" green="0.207625214" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="240" id="Pq6-Aj-h90"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="cTY-JJ-Ss2" firstAttribute="leading" secondItem="opL-cR-ZhC" secondAttribute="leadingMargin" id="9gT-Ac-Tpf"/>
+                                        <constraint firstItem="cTY-JJ-Ss2" firstAttribute="top" secondItem="opL-cR-ZhC" secondAttribute="topMargin" id="MLP-7b-BaE"/>
+                                        <constraint firstItem="cTY-JJ-Ss2" firstAttribute="bottom" secondItem="opL-cR-ZhC" secondAttribute="bottomMargin" id="Q8K-Jt-B5h"/>
+                                        <constraint firstItem="cTY-JJ-Ss2" firstAttribute="centerX" secondItem="opL-cR-ZhC" secondAttribute="centerX" id="t0T-rq-Xog"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="AssignmentLabel" destination="j64-ky-tPN" id="ydM-R0-xG0"/>
+                                    <outlet property="ImageView" destination="x0N-ty-5gR" id="wc5-we-7dP"/>
+                                    <outlet property="ProgressLabel" destination="h11-iq-bNv" id="zvm-Yy-Icq"/>
+                                    <outlet property="ProgressView" destination="hvj-yx-EMW" id="j4U-oL-PMd"/>
+                                    <outlet property="TitleLabel" destination="GJA-6X-Gbk" id="fgv-qk-nKS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -137,7 +210,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVf-CJ-AFY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1399" y="-1632"/>
+            <point key="canvasLocation" x="-1210.144927536232" y="-1746.4285714285713"/>
         </scene>
         <!--Achievements-->
         <scene sceneID="saA-aH-sXc">
@@ -963,7 +1036,7 @@
         <!--Daily Workout-->
         <scene sceneID="x8K-7R-C8N">
             <objects>
-                <viewController id="Rr6-U4-TIi" sceneMemberID="viewController">
+                <viewController id="Rr6-U4-TIi" customClass="DailyWorkoutViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="upR-1b-ldS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -992,6 +1065,13 @@
                                     <constraint firstAttribute="height" constant="229" id="Lc4-dK-ohS"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faa-L8-vZS">
+                                <rect key="frame" x="87" y="601" width="240" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="023-da-9wf" kind="show" id="8eW-qD-jse"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1019,7 +1099,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRu-0c-1Fb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1871.0144927536232" y="935.49107142857133"/>
+            <point key="canvasLocation" x="1757.9710144927537" y="1076.7857142857142"/>
+        </scene>
+        <!--Exercise Web View Controller-->
+        <scene sceneID="Qop-5r-E0g">
+            <objects>
+                <viewController id="023-da-9wf" customClass="ExerciseWebViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wN9-bl-69N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s10-kn-esF">
+                                <rect key="frame" x="0.0" y="99" width="414" height="714"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gD3-23-lNR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Evg-nc-MHw">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="Qdn-pW-nVW">
+                            <color key="tintColor" red="0.25490196079999999" green="0.50588235290000005" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="SharePressed:" destination="023-da-9wf" id="WcE-9g-iCg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="WebView" destination="s10-kn-esF" id="FHg-nJ-M6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="onR-hf-vfG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1758" y="1769"/>
         </scene>
     </scenes>
     <resources>
