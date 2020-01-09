@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         notification("Meal Time", "Most important meal of the day! BREAKFAST!!!", 8, 30)
         notification("Meal Time", "Its time for lunch", 12, 30)
         notification("Meal Time", "Its time for snack", 16, 30)
-        notification("Meal Time", "Its time for dinner", 19, 30)
+        notification("Meal Time", "Its time for dinner", 21, 59)
         
         notification("Time to take your meds!", "Don`t forget to take care of your health", 10, 30)
         notification("Move your body!", "Did you do your exercise today", 14, 48)
