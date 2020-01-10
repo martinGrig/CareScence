@@ -10,6 +10,7 @@ import UIKit
 
 class MedicineTableViewController: UITableViewController {
 
+    var medicine: Medicine? = Medicine(name: "Vitamin C", day: ["Tuesday"], time: "11:00", frequency: "Once a day")
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +33,7 @@ class MedicineTableViewController: UITableViewController {
         return 0
     }
 
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -87,4 +89,20 @@ class MedicineTableViewController: UITableViewController {
     }
     */
 
+}
+extension MedicineTableViewController{
+@IBAction func cancelToMedicineTableViewController(_ segue: UIStoryboardSegue) {
+}
+
+@IBAction func saveMedicineDetail(_ segue: UIStoryboardSegue) {
+    
+    
+    guard let AddMedicineTableViewController = segue.source as? AddMedicineTableViewController,
+        let med = AddMedicineTableViewController.med else {
+            return
+    }
+    
+    medicine = med
+    
+}
 }
