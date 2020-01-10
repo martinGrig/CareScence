@@ -36,6 +36,7 @@ class AddMedicineTableViewController: UITableViewController, UIPickerViewDelegat
         return 1
     }
     
+    @IBOutlet weak var Monday: UISwitch!
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerData.count
     }
@@ -54,8 +55,9 @@ class AddMedicineTableViewController: UITableViewController, UIPickerViewDelegat
             let formatter = DateFormatter()
             formatter.dateFormat = "HH:mm"
             let time = formatter.string(from: Time.date)
-            med = Medicine.init(name: name!, day: ["Monday","Tuesday"], time: time, frequency: d as! String)
-            
+            if Monday.isOn{
+            med = Medicine.init(name: name!, day: ["Monday"], time: time, frequency: d as! String)
+            }
     }
     
     // MARK: - Table view data source
