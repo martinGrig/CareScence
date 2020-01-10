@@ -15,22 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caresense-logo" translatesAutoresizingMaskIntoConstraints="NO" id="4wD-0F-JL2">
-                                <rect key="frame" x="157" y="393" width="100" height="110"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caresense-logo" translatesAutoresizingMaskIntoConstraints="NO" id="L76-Or-Zrj">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="A3E-kN-eld"/>
-                                    <constraint firstAttribute="height" constant="100" id="BQd-sn-SQ6"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="p4C-3N-Nqj"/>
+                                    <constraint firstAttribute="width" constant="200" id="QOy-SK-Ajc"/>
+                                    <constraint firstAttribute="height" constant="200" id="bkm-Tr-nGW"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4wD-0F-JL2" secondAttribute="trailing" constant="157" id="114-uk-58P"/>
-                            <constraint firstItem="4wD-0F-JL2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1gB-hz-ulb"/>
-                            <constraint firstItem="4wD-0F-JL2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="rMa-33-HhL"/>
-                            <constraint firstItem="4wD-0F-JL2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ud5-gY-JIw"/>
-                            <constraint firstItem="4wD-0F-JL2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="349" id="v5w-Ia-f9E"/>
+                            <constraint firstItem="L76-Or-Zrj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="X5W-ED-gdN"/>
+                            <constraint firstItem="L76-Or-Zrj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="b4K-Gj-i1Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
