@@ -1507,18 +1507,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="achievements - selected" width="50" height="50"/>
+        <image name="achievements - selected" width="25" height="25"/>
         <image name="circle" width="628" height="582"/>
         <image name="emergency-contact" width="236" height="236"/>
         <image name="exercise-heel-to-toe-walk" width="1280" height="720"/>
         <image name="exercise-toe-stand" width="1280" height="720"/>
-        <image name="exercises - selected" width="50" height="50"/>
+        <image name="exercises - selected" width="25" height="25"/>
         <image name="exercises today" width="512" height="512"/>
         <image name="happy" width="512" height="512"/>
-        <image name="home - default" width="50" height="50"/>
-        <image name="home - selected" width="50" height="50"/>
+        <image name="home - default" width="25" height="25"/>
+        <image name="home - selected" width="25" height="25"/>
         <image name="iphone-battery-icon" width="360" height="360"/>
-        <image name="news - default" width="50" height="50"/>
+        <image name="news - default" width="25" height="25"/>
         <image name="pill" width="512" height="512"/>
         <image name="settings" width="512" height="512"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
