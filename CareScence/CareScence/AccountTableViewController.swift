@@ -21,11 +21,11 @@ class AccountTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     if segue.identifier == "SaveAccountDetail",
-         let name = NameTextField.text,
-         let email = EmailTextField.text,
-         let password = PasswordTextField.text {
-        user = User.init(name: name, email: email, password: password,  photo: #imageLiteral(resourceName: "happy") , emergencyContact: "")
+        if segue.identifier == "SaveAccountDetail"{
+            let name = NameTextField.text
+            let email = EmailTextField.text
+            let password = PasswordTextField.text
+            user = User.init(name: name!, email: email!, password: password!,  photo: #imageLiteral(resourceName: "happy") , emergencyContact: "")
      }
     
     
