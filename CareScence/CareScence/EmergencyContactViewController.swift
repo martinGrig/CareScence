@@ -15,7 +15,7 @@ class EmergencyContactViewController: UIViewController {
     @IBOutlet weak var PhoneLabel: UILabel!
     
 
-    var emergency = EmergencyContact(name: "Jane Smith", email: "jane@abv.cr", photo: #imageLiteral(resourceName: "happy"), phoneNumber: "+31 6 12345678")
+    var emergency = EmergencyContact(name: "Jane Smith", email: "jane@abv.cr", photo: #imageLiteral(resourceName: "emergency-contact"), phoneNumber: "+31 6 12345678")
     override func viewDidLoad() {
         super.viewDidLoad()
 
