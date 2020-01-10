@@ -30,6 +30,7 @@
 		3F6BE04D23A3CE950083606E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6BE04C23A3CE950083606E /* TodayViewController.swift */; };
 		3F6BE05023A3CE950083606E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BE04E23A3CE950083606E /* MainInterface.storyboard */; };
 		3F6BE05423A3CE950083606E /* CareScence Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3F6BE04723A3CE950083606E /* CareScence Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F976D6A23C899BF00DA4EC5 /* WalkingAnalysisPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F976D6923C899BF00DA4EC5 /* WalkingAnalysisPageViewController.swift */; };
 		3FA6C4E123A3A9AD00673C90 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */; };
 		3FA6C4E523A3B7A900673C90 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4E423A3B7A900673C90 /* ExerciseTableViewCell.swift */; };
 		3FA6C4E923A3B86A00673C90 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4E823A3B86A00673C90 /* Exercise.swift */; };
@@ -90,6 +91,7 @@
 		3F6BE04C23A3CE950083606E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		3F6BE04F23A3CE950083606E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		3F6BE05123A3CE950083606E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F976D6923C899BF00DA4EC5 /* WalkingAnalysisPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingAnalysisPageViewController.swift; sourceTree = "<group>"; };
 		3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3FA6C4E423A3B7A900673C90 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
 		3FA6C4E823A3B86A00673C90 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				3F5BDD2F23C73FA50037E24B /* AchievmentTableViewCell.swift */,
 				3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */,
 				3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */,
+				3F976D6923C899BF00DA4EC5 /* WalkingAnalysisPageViewController.swift */,
 			);
 			path = CareScence;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				3FA6C4E923A3B86A00673C90 /* Exercise.swift in Sources */,
 				3FBB15E723A7D1A2008A4505 /* EmergencyContactViewController.swift in Sources */,
 				3F5BDD2823C73B870037E24B /* DailyWorkoutViewController.swift in Sources */,
+				3F976D6A23C899BF00DA4EC5 /* WalkingAnalysisPageViewController.swift in Sources */,
 				3FA6C4E523A3B7A900673C90 /* ExerciseTableViewCell.swift in Sources */,
 				3F05C01D23A55A8300F49EA6 /* SettingsTableViewController.swift in Sources */,
 				3F5BDD2C23C73E420037E24B /* Achievment.swift in Sources */,
