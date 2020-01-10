@@ -19,6 +19,9 @@
 		3F33ECC023A398B4007091C5 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */; };
 		3F33ECC223A398CB007091C5 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */; };
 		3F33ECC623A39C14007091C5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC523A39C14007091C5 /* Article.swift */; };
+		3F3D338023C75EEB004DAE6A /* MedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */; };
+		3F3D338223C75EFE004DAE6A /* AddMedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */; };
+		3F3D338423C75FA7004DAE6A /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D338323C75FA7004DAE6A /* Medicine.swift */; };
 		3F5BDD2823C73B870037E24B /* DailyWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */; };
 		3F5BDD2C23C73E420037E24B /* Achievment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2B23C73E420037E24B /* Achievment.swift */; };
 		3F5BDD2E23C73F750037E24B /* AchievmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */; };
@@ -75,6 +78,9 @@
 		3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		3F33ECC523A39C14007091C5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewController.swift; sourceTree = "<group>"; };
+		3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicineTableViewController.swift; sourceTree = "<group>"; };
+		3F3D338323C75FA7004DAE6A /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkoutViewController.swift; sourceTree = "<group>"; };
 		3F5BDD2B23C73E420037E24B /* Achievment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievment.swift; sourceTree = "<group>"; };
 		3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievmentTableViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 				3F33ECC523A39C14007091C5 /* Article.swift */,
 				3FA6C4E823A3B86A00673C90 /* Exercise.swift */,
 				3F5BDD2B23C73E420037E24B /* Achievment.swift */,
+				3F3D338323C75FA7004DAE6A /* Medicine.swift */,
 				3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */,
 				0EB60A5423A23ED8002BB4EF /* AppDelegate.swift */,
 				3F05C02023A6A24800F49EA6 /* Main.storyboard */,
@@ -158,6 +165,8 @@
 				3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */,
 				3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */,
 				3F5BDD2F23C73FA50037E24B /* AchievmentTableViewCell.swift */,
+				3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */,
+				3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */,
 			);
 			path = CareScence;
 			sourceTree = "<group>";
@@ -283,6 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F05C01F23A6996D00F49EA6 /* User.swift in Sources */,
+				3F3D338423C75FA7004DAE6A /* Medicine.swift in Sources */,
+				3F3D338023C75EEB004DAE6A /* MedicineTableViewController.swift in Sources */,
 				3FA6C4EF23A3D3B000673C90 /* ExerciseWebViewController.swift in Sources */,
 				3F05C02323A6AD2500F49EA6 /* AccountTableViewController.swift in Sources */,
 				3F5BDD3023C73FA50037E24B /* AchievmentTableViewCell.swift in Sources */,
@@ -298,6 +309,7 @@
 				3FA6C4E523A3B7A900673C90 /* ExerciseTableViewCell.swift in Sources */,
 				3F05C01D23A55A8300F49EA6 /* SettingsTableViewController.swift in Sources */,
 				3F5BDD2C23C73E420037E24B /* Achievment.swift in Sources */,
+				3F3D338223C75EFE004DAE6A /* AddMedicineTableViewController.swift in Sources */,
 				3FBB15EB23A7DE39008A4505 /* EmergencyContact.swift in Sources */,
 				0EB60A5523A23ED8002BB4EF /* AppDelegate.swift in Sources */,
 				3FA6C4ED23A3C4D800673C90 /* ExerciseTableViewController.swift in Sources */,
