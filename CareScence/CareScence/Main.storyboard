@@ -887,6 +887,14 @@
             </objects>
             <point key="canvasLocation" x="-123" y="-446"/>
         </scene>
+        <!--Walking Analysis Page View Controller-->
+        <scene sceneID="ZlP-va-tbh">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="l7a-AJ-YpV" customClass="WalkingAnalysisPageViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qz-Ux-HOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="-408"/>
+        </scene>
         <!--News-->
         <scene sceneID="7nv-MZ-4oS">
             <objects>
