@@ -10,20 +10,93 @@
 		0EB60A5523A23ED8002BB4EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB60A5423A23ED8002BB4EF /* AppDelegate.swift */; };
 		0EB60A5723A23ED8002BB4EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB60A5623A23ED8002BB4EF /* SceneDelegate.swift */; };
 		0EB60A5923A23ED8002BB4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB60A5823A23ED8002BB4EF /* ViewController.swift */; };
-		0EB60A5C23A23ED8002BB4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB60A5A23A23ED8002BB4EF /* Main.storyboard */; };
 		0EB60A5E23A23EDA002BB4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB60A5D23A23EDA002BB4EF /* Assets.xcassets */; };
 		0EB60A6123A23EDA002BB4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB60A5F23A23EDA002BB4EF /* LaunchScreen.storyboard */; };
+		3F05C01D23A55A8300F49EA6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05C01C23A55A8300F49EA6 /* SettingsTableViewController.swift */; };
+		3F05C01F23A6996D00F49EA6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05C01E23A6996D00F49EA6 /* User.swift */; };
+		3F05C02123A6A24800F49EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F05C02023A6A24800F49EA6 /* Main.storyboard */; };
+		3F05C02323A6AD2500F49EA6 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05C02223A6AD2500F49EA6 /* AccountTableViewController.swift */; };
+		3F33ECC023A398B4007091C5 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */; };
+		3F33ECC223A398CB007091C5 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */; };
+		3F33ECC623A39C14007091C5 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33ECC523A39C14007091C5 /* Article.swift */; };
+		3F3D338023C75EEB004DAE6A /* MedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */; };
+		3F3D338223C75EFE004DAE6A /* AddMedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */; };
+		3F3D338423C75FA7004DAE6A /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D338323C75FA7004DAE6A /* Medicine.swift */; };
+		3F5BDD2823C73B870037E24B /* DailyWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */; };
+		3F5BDD2C23C73E420037E24B /* Achievment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2B23C73E420037E24B /* Achievment.swift */; };
+		3F5BDD2E23C73F750037E24B /* AchievmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */; };
+		3F5BDD3023C73FA50037E24B /* AchievmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2F23C73FA50037E24B /* AchievmentTableViewCell.swift */; };
+		3F6BE04A23A3CE950083606E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6BE04923A3CE950083606E /* NotificationCenter.framework */; };
+		3F6BE04D23A3CE950083606E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6BE04C23A3CE950083606E /* TodayViewController.swift */; };
+		3F6BE05023A3CE950083606E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6BE04E23A3CE950083606E /* MainInterface.storyboard */; };
+		3F6BE05423A3CE950083606E /* CareScence Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3F6BE04723A3CE950083606E /* CareScence Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3FA6C4E123A3A9AD00673C90 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */; };
+		3FA6C4E523A3B7A900673C90 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4E423A3B7A900673C90 /* ExerciseTableViewCell.swift */; };
+		3FA6C4E923A3B86A00673C90 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4E823A3B86A00673C90 /* Exercise.swift */; };
+		3FA6C4ED23A3C4D800673C90 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4EC23A3C4D800673C90 /* ExerciseTableViewController.swift */; };
+		3FA6C4EF23A3D3B000673C90 /* ExerciseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */; };
+		3FBB15E723A7D1A2008A4505 /* EmergencyContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB15E623A7D1A2008A4505 /* EmergencyContactViewController.swift */; };
+		3FBB15EB23A7DE39008A4505 /* EmergencyContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F6BE05223A3CE950083606E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EB60A4923A23ED7002BB4EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F6BE04623A3CE950083606E;
+			remoteInfo = "CareScence Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F6BE05523A3CE950083606E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3F6BE05423A3CE950083606E /* CareScence Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0EB60A5123A23ED8002BB4EF /* CareScence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareScence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB60A5423A23ED8002BB4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EB60A5623A23ED8002BB4EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0EB60A5823A23ED8002BB4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0EB60A5B23A23ED8002BB4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EB60A5D23A23EDA002BB4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EB60A6023A23EDA002BB4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EB60A6223A23EDA002BB4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F05C01C23A55A8300F49EA6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		3F05C01E23A6996D00F49EA6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3F05C02023A6A24800F49EA6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3F05C02223A6AD2500F49EA6 /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		3F33ECC523A39C14007091C5 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewController.swift; sourceTree = "<group>"; };
+		3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicineTableViewController.swift; sourceTree = "<group>"; };
+		3F3D338323C75FA7004DAE6A /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkoutViewController.swift; sourceTree = "<group>"; };
+		3F5BDD2B23C73E420037E24B /* Achievment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievment.swift; sourceTree = "<group>"; };
+		3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievmentTableViewController.swift; sourceTree = "<group>"; };
+		3F5BDD2F23C73FA50037E24B /* AchievmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievmentTableViewCell.swift; sourceTree = "<group>"; };
+		3F6BE04723A3CE950083606E /* CareScence Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CareScence Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6BE04923A3CE950083606E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3F6BE04C23A3CE950083606E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		3F6BE04F23A3CE950083606E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3F6BE05123A3CE950083606E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3FA6C4E423A3B7A900673C90 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		3FA6C4E823A3B86A00673C90 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		3FA6C4EC23A3C4D800673C90 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseWebViewController.swift; sourceTree = "<group>"; };
+		3FBB15E623A7D1A2008A4505 /* EmergencyContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactViewController.swift; sourceTree = "<group>"; };
+		3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F6BE04423A3CE950083606E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6BE04A23A3CE950083606E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				0EB60A5323A23ED8002BB4EF /* CareScence */,
+				3F6BE04B23A3CE950083606E /* CareScence Widget */,
+				3F6BE04823A3CE950083606E /* Frameworks */,
 				0EB60A5223A23ED8002BB4EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB60A5123A23ED8002BB4EF /* CareScence.app */,
+				3F6BE04723A3CE950083606E /* CareScence Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +140,53 @@
 		0EB60A5323A23ED8002BB4EF /* CareScence */ = {
 			isa = PBXGroup;
 			children = (
+				3F05C01E23A6996D00F49EA6 /* User.swift */,
+				3F33ECC523A39C14007091C5 /* Article.swift */,
+				3FA6C4E823A3B86A00673C90 /* Exercise.swift */,
+				3F5BDD2B23C73E420037E24B /* Achievment.swift */,
+				3F3D338323C75FA7004DAE6A /* Medicine.swift */,
+				3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */,
 				0EB60A5423A23ED8002BB4EF /* AppDelegate.swift */,
+				3F05C02023A6A24800F49EA6 /* Main.storyboard */,
 				0EB60A5623A23ED8002BB4EF /* SceneDelegate.swift */,
 				0EB60A5823A23ED8002BB4EF /* ViewController.swift */,
-				0EB60A5A23A23ED8002BB4EF /* Main.storyboard */,
-				0EB60A5D23A23EDA002BB4EF /* Assets.xcassets */,
 				0EB60A5F23A23EDA002BB4EF /* LaunchScreen.storyboard */,
+				0EB60A5D23A23EDA002BB4EF /* Assets.xcassets */,
 				0EB60A6223A23EDA002BB4EF /* Info.plist */,
+				3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */,
+				3F33ECC123A398CB007091C5 /* NewsTableViewCell.swift */,
+				3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */,
+				3FA6C4E423A3B7A900673C90 /* ExerciseTableViewCell.swift */,
+				3FA6C4EC23A3C4D800673C90 /* ExerciseTableViewController.swift */,
+				3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */,
+				3F05C01C23A55A8300F49EA6 /* SettingsTableViewController.swift */,
+				3F05C02223A6AD2500F49EA6 /* AccountTableViewController.swift */,
+				3FBB15E623A7D1A2008A4505 /* EmergencyContactViewController.swift */,
+				3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */,
+				3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */,
+				3F5BDD2F23C73FA50037E24B /* AchievmentTableViewCell.swift */,
+				3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */,
+				3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */,
 			);
 			path = CareScence;
+			sourceTree = "<group>";
+		};
+		3F6BE04823A3CE950083606E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F6BE04923A3CE950083606E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F6BE04B23A3CE950083606E /* CareScence Widget */ = {
+			isa = PBXGroup;
+			children = (
+				3F6BE04C23A3CE950083606E /* TodayViewController.swift */,
+				3F6BE04E23A3CE950083606E /* MainInterface.storyboard */,
+				3F6BE05123A3CE950083606E /* Info.plist */,
+			);
+			path = "CareScence Widget";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +199,34 @@
 				0EB60A4D23A23ED8002BB4EF /* Sources */,
 				0EB60A4E23A23ED8002BB4EF /* Frameworks */,
 				0EB60A4F23A23ED8002BB4EF /* Resources */,
+				3F6BE05523A3CE950083606E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3F6BE05323A3CE950083606E /* PBXTargetDependency */,
 			);
 			name = CareScence;
 			productName = CareScence;
 			productReference = 0EB60A5123A23ED8002BB4EF /* CareScence.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3F6BE04623A3CE950083606E /* CareScence Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6BE05823A3CE950083606E /* Build configuration list for PBXNativeTarget "CareScence Widget" */;
+			buildPhases = (
+				3F6BE04323A3CE950083606E /* Sources */,
+				3F6BE04423A3CE950083606E /* Frameworks */,
+				3F6BE04523A3CE950083606E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CareScence Widget";
+			productName = "CareScence Widget";
+			productReference = 3F6BE04723A3CE950083606E /* CareScence Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -93,12 +234,15 @@
 		0EB60A4923A23ED7002BB4EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "JD Destine";
 				TargetAttributes = {
 					0EB60A5023A23ED8002BB4EF = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					3F6BE04623A3CE950083606E = {
+						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
@@ -116,6 +260,7 @@
 			projectRoot = "";
 			targets = (
 				0EB60A5023A23ED8002BB4EF /* CareScence */,
+				3F6BE04623A3CE950083606E /* CareScence Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +270,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F05C02123A6A24800F49EA6 /* Main.storyboard in Resources */,
 				0EB60A6123A23EDA002BB4EF /* LaunchScreen.storyboard in Resources */,
 				0EB60A5E23A23EDA002BB4EF /* Assets.xcassets in Resources */,
-				0EB60A5C23A23ED8002BB4EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6BE04523A3CE950083606E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6BE05023A3CE950083606E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +291,65 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F05C01F23A6996D00F49EA6 /* User.swift in Sources */,
+				3F3D338423C75FA7004DAE6A /* Medicine.swift in Sources */,
+				3F3D338023C75EEB004DAE6A /* MedicineTableViewController.swift in Sources */,
+				3FA6C4EF23A3D3B000673C90 /* ExerciseWebViewController.swift in Sources */,
+				3F05C02323A6AD2500F49EA6 /* AccountTableViewController.swift in Sources */,
+				3F5BDD3023C73FA50037E24B /* AchievmentTableViewCell.swift in Sources */,
+				3F33ECC023A398B4007091C5 /* NewsTableViewController.swift in Sources */,
 				0EB60A5923A23ED8002BB4EF /* ViewController.swift in Sources */,
+				3F33ECC623A39C14007091C5 /* Article.swift in Sources */,
+				3F33ECC223A398CB007091C5 /* NewsTableViewCell.swift in Sources */,
+				3F5BDD2E23C73F750037E24B /* AchievmentTableViewController.swift in Sources */,
+				3FA6C4E123A3A9AD00673C90 /* WebViewController.swift in Sources */,
+				3FA6C4E923A3B86A00673C90 /* Exercise.swift in Sources */,
+				3FBB15E723A7D1A2008A4505 /* EmergencyContactViewController.swift in Sources */,
+				3F5BDD2823C73B870037E24B /* DailyWorkoutViewController.swift in Sources */,
+				3FA6C4E523A3B7A900673C90 /* ExerciseTableViewCell.swift in Sources */,
+				3F05C01D23A55A8300F49EA6 /* SettingsTableViewController.swift in Sources */,
+				3F5BDD2C23C73E420037E24B /* Achievment.swift in Sources */,
+				3F3D338223C75EFE004DAE6A /* AddMedicineTableViewController.swift in Sources */,
+				3FBB15EB23A7DE39008A4505 /* EmergencyContact.swift in Sources */,
 				0EB60A5523A23ED8002BB4EF /* AppDelegate.swift in Sources */,
+				3FA6C4ED23A3C4D800673C90 /* ExerciseTableViewController.swift in Sources */,
 				0EB60A5723A23ED8002BB4EF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F6BE04323A3CE950083606E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F6BE04D23A3CE950083606E /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		0EB60A5A23A23ED8002BB4EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EB60A5B23A23ED8002BB4EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		3F6BE05323A3CE950083606E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F6BE04623A3CE950083606E /* CareScence Widget */;
+			targetProxy = 3F6BE05223A3CE950083606E /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		0EB60A5F23A23EDA002BB4EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0EB60A6023A23EDA002BB4EF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F6BE04E23A3CE950083606E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F6BE04F23A3CE950083606E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +472,7 @@
 		0EB60A6623A23EDA002BB4EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CareScence/Info.plist;
@@ -300,6 +490,7 @@
 		0EB60A6723A23EDA002BB4EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CareScence/Info.plist;
@@ -309,6 +500,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.jd.CareScence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F6BE05623A3CE950083606E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CareScence Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.jd.CareScence.CareScence-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F6BE05723A3CE950083606E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CareScence Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.jd.CareScence.CareScence-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +558,15 @@
 			buildConfigurations = (
 				0EB60A6623A23EDA002BB4EF /* Debug */,
 				0EB60A6723A23EDA002BB4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F6BE05823A3CE950083606E /* Build configuration list for PBXNativeTarget "CareScence Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F6BE05623A3CE950083606E /* Debug */,
+				3F6BE05723A3CE950083606E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
