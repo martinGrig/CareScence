@@ -11,7 +11,8 @@ import WebKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-          
+                
+        // Notifications.
         notification("Meal Time", "Most important meal of the day! BREAKFAST!!!", 8, 30)
         notification("Meal Time", "Its time for lunch", 12, 30)
         notification("Meal Time", "Its time for snack", 16, 30)
@@ -78,5 +79,11 @@ extension ViewController{
             let setting = settingsViewController.account else {
                 return
         }
+    }
+}
+
+extension UINavigationBar {
+    func changeFont() {
+        self.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont(name: "Avenir-Black", size: 34)!]
     }
 }
