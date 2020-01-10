@@ -8,23 +8,55 @@
 
 import UIKit
 
-class AddMedicineTableViewController: UITableViewController {
+class AddMedicineTableViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    
     @IBOutlet weak var MedName: UITextField!
     @IBOutlet weak var Frequency: UIPickerView!
     @IBOutlet weak var Time: UIDatePicker!
-    
+    var pickerData: [String] = [String]()
     
     var med : Medicine?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.Frequency.delegate = self
+        self.Frequency.dataSource = self
+        pickerData = ["Once a day", "Twice a day", "Three times a day"]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
     
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    // Capture the picker view selection
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SaveMedicine"{
+            let d = Frequency.dataSource
+            let name = MedName.text
+            let formatter = DateFormatter()
+            formatter.dateFormat = "HH:mm"
+            let time = formatter.string(from: Time.date)
+            med = Medicine.init(name: name!, day: ["Monday","Tuesday"], time: time, frequency: d as! String)
+            
+    }
     
     // MARK: - Table view data source
 
@@ -85,4 +117,5 @@ class AddMedicineTableViewController: UITableViewController {
     }
     */
 
+}
 }

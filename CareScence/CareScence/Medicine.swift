@@ -11,7 +11,7 @@ import UIKit
 
 struct Medicine{
     let name: String
-    let day: String
+    let day: [String]
     let time: String
     let frequency: String
     
