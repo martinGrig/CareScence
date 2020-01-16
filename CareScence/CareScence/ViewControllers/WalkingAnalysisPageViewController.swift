@@ -36,14 +36,14 @@ class WalkingAnalysisPageViewController: UIPageViewController, UIPageViewControl
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        guard let vcIndex = pageViewConrollerList.index(of: viewController) else {return nil}
+        guard let vcIndex = pageViewConrollerList.firstIndex(of: viewController) else {return nil}
         let previousIndex = vcIndex - 1
         guard previousIndex >= 0 else {return nil}
         guard pageViewConrollerList.count > previousIndex else {return nil}
         return pageViewConrollerList[previousIndex]
     }
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let vcIndex = pageViewConrollerList.index(of: viewController) else {return nil}
+        guard let vcIndex = pageViewConrollerList.firstIndex(of: viewController) else {return nil}
         let nextIndex = vcIndex + 1
         guard pageViewConrollerList.count != nextIndex else {return nil}
         guard pageViewConrollerList.count > nextIndex else {return nil}

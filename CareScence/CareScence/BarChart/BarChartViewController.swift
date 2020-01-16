@@ -31,6 +31,7 @@ class BarChartViewController: UIViewController {
           }
           timer.fire()
         
+        
       }
       
         
