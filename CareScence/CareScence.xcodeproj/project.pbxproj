@@ -47,6 +47,7 @@
 		3FA6C4EF23A3D3B000673C90 /* ExerciseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */; };
 		3FBB15E723A7D1A2008A4505 /* EmergencyContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB15E623A7D1A2008A4505 /* EmergencyContactViewController.swift */; };
 		3FBB15EB23A7DE39008A4505 /* EmergencyContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */; };
+		3FCECDCF23D0642F00188B40 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCECDCE23D0642F00188B40 /* MedicineTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseWebViewController.swift; sourceTree = "<group>"; };
 		3FBB15E623A7D1A2008A4505 /* EmergencyContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactViewController.swift; sourceTree = "<group>"; };
 		3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContact.swift; sourceTree = "<group>"; };
+		3FCECDCE23D0642F00188B40 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +168,9 @@
 				3FBB15E623A7D1A2008A4505 /* EmergencyContactViewController.swift */,
 				3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */,
 				3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */,
-				3F976D6923C899BF00DA4EC5 /* WalkingAnalysisPageViewController.swift */,
 				3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */,
+				3FCECDCE23D0642F00188B40 /* MedicineTableViewCell.swift */,
+				3F976D6923C899BF00DA4EC5 /* WalkingAnalysisPageViewController.swift */,
 				3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */,
 				0EB60A5823A23ED8002BB4EF /* ViewController.swift */,
 			);
@@ -380,6 +383,7 @@
 				3F5BDD2C23C73E420037E24B /* Achievment.swift in Sources */,
 				3F3D338223C75EFE004DAE6A /* AddMedicineTableViewController.swift in Sources */,
 				3FBB15EB23A7DE39008A4505 /* EmergencyContact.swift in Sources */,
+				3FCECDCF23D0642F00188B40 /* MedicineTableViewCell.swift in Sources */,
 				0EB60A5523A23ED8002BB4EF /* AppDelegate.swift in Sources */,
 				3FA6C4ED23A3C4D800673C90 /* ExerciseTableViewController.swift in Sources */,
 				0E1C23DB23C8A445001C2859 /* UIBezierPathExtension.swift in Sources */,
