@@ -22,14 +22,23 @@ class BarChartViewController: UIViewController {
         
     override func viewDidAppear(_ animated: Bool) {
         downloadJson()
+        var p = 0;
         
           let dataEntries = generateEmptyDataEntries()
           basicBarChart.updateDataEntries(dataEntries: dataEntries, animated: false)
           
           let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {[unowned self] (timer) in
             let dataEntries = self.generateRandomDataEntries();              self.basicBarChart.updateDataEntries(dataEntries: dataEntries, animated: true)
+             p = p + 1
+            if(p == 3){
+                
+                timer.invalidate()
+            }
+            
           }
           timer.fire()
+        
+
         
         
       }
@@ -55,10 +64,7 @@ class BarChartViewController: UIViewController {
                             JSONDecoder().decode([StepData].self, from: data)
             self.DataStep = stepdata
             
-            for StepData in self.DataStep {
-                print(StepData.Steps)
-            }
-            
+          
           }catch let jsonErr{
             print("Error serializing json: ",jsonErr)
             }
