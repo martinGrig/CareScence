@@ -324,6 +324,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2W-A2-gfb">
+                                                <rect key="frame" x="0.0" y="-4" width="404" height="203"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <segue destination="iMS-9I-4ZZ" kind="show" id="ssr-SN-Rhi"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.80240082740783691" green="0.91079491376876831" blue="0.49795675277709961" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -484,6 +491,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="54e-KO-oIy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="FMd-Sh-3kl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="54e-KO-oIy" secondAttribute="trailing" constant="5" id="Rhu-vo-c3j"/>
@@ -606,6 +614,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggY-Ip-Tbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1671.0144927536232" y="304.6875"/>
+        </scene>
+        <!--Bar Chart View Controller-->
+        <scene sceneID="ggg-No-k5K">
+            <objects>
+                <viewController id="iMS-9I-4ZZ" customClass="BarChartViewController" customModule="CareScence" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RGO-6g-dFf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxs-yx-HJl" customClass="BasicBarChart" customModule="CareScence" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="204" width="414" height="293"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ajd-v2-Sef" firstAttribute="bottom" secondItem="nxs-yx-HJl" secondAttribute="bottom" constant="316" id="SK8-Y4-RAA"/>
+                            <constraint firstItem="nxs-yx-HJl" firstAttribute="leading" secondItem="ajd-v2-Sef" secondAttribute="leading" id="dTd-us-zC0"/>
+                            <constraint firstItem="nxs-yx-HJl" firstAttribute="centerX" secondItem="RGO-6g-dFf" secondAttribute="centerX" id="ekR-Sw-Lta"/>
+                            <constraint firstItem="nxs-yx-HJl" firstAttribute="top" secondItem="ajd-v2-Sef" secondAttribute="top" constant="64" id="mRE-Wb-2Fd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ajd-v2-Sef"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y50-qb-19q"/>
+                    <connections>
+                        <outlet property="basicBarChart" destination="nxs-yx-HJl" id="KrU-r8-bqc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHm-0O-fQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2434.7826086956525" y="300.66964285714283"/>
         </scene>
         <!--Settings-->
         <scene sceneID="U9M-Ho-S74">
@@ -1468,18 +1507,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="achievements - selected" width="50" height="50"/>
+        <image name="achievements - selected" width="25" height="25"/>
         <image name="circle" width="628" height="582"/>
         <image name="emergency-contact" width="236" height="236"/>
         <image name="exercise-heel-to-toe-walk" width="1280" height="720"/>
         <image name="exercise-toe-stand" width="1280" height="720"/>
-        <image name="exercises - selected" width="50" height="50"/>
+        <image name="exercises - selected" width="25" height="25"/>
         <image name="exercises today" width="512" height="512"/>
         <image name="happy" width="512" height="512"/>
-        <image name="home - default" width="50" height="50"/>
-        <image name="home - selected" width="50" height="50"/>
+        <image name="home - default" width="25" height="25"/>
+        <image name="home - selected" width="25" height="25"/>
         <image name="iphone-battery-icon" width="360" height="360"/>
-        <image name="news - default" width="50" height="50"/>
+        <image name="news - default" width="25" height="25"/>
         <image name="pill" width="512" height="512"/>
         <image name="settings" width="512" height="512"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
