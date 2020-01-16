@@ -10,9 +10,13 @@ import UIKit
 
 class MedicineTableViewController: UITableViewController {
 
+            
+
     var medicines: [Medicine] = [Medicine(name: "Vitamin C", day: ["Tuesday"], time: "11:00", frequency: "")
     ]
 
+
+    
 }
 extension MedicineTableViewController{
 @IBAction func cancelToMedicineTableViewController(_ segue: UIStoryboardSegue) {
@@ -48,4 +52,8 @@ extension MedicineTableViewController{
         
       return cell
     }
+    
+    
+    
+    
 }

@@ -16,7 +16,7 @@ class SettingsTableViewController: UITableViewController {
     @IBOutlet weak var ExerciseSwitch: UISwitch!
     
     
-    var account: User? = User(name: "Jack Smith", email: "j.smith@yahooo.com", password: "bunnies", photo: #imageLiteral(resourceName: "sad") , emergencyContact: "")
+    var account: User? = User(name: "Jack Smith", email: "j.smith@yahooo.com", password: "bunnies", photo: #imageLiteral(resourceName: "profilepic") , emergencyContact: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()

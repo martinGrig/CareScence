@@ -18,6 +18,7 @@ class MedicineTableViewCell: UITableViewCell {
     @IBOutlet weak var Frequency: UILabel!
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
