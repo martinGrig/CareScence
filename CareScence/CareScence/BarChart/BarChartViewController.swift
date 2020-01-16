@@ -30,6 +30,7 @@ class BarChartViewController: UIViewController {
             let dataEntries = self.generateRandomDataEntries();              self.basicBarChart.updateDataEntries(dataEntries: dataEntries, animated: true)
           }
           timer.fire()
+        
       }
       
         
@@ -47,8 +48,6 @@ class BarChartViewController: UIViewController {
        
         URLSession.shared.dataTask(with: downloadURL) { (data, urlResponse , error) in
             guard let data = data else {return}
-            let dataAsString = String(data:data,encoding: .utf8)
-           // print(dataAsString)
             
           do{
                         let stepdata = try
@@ -92,8 +91,10 @@ class BarChartViewController: UIViewController {
 
                                let formatter = DateFormatter()
                                formatter.dateFormat = "d MMM"
+//                    var date = self.DataStep[i].Date
+//                                                result.append(DataEntry(color: colors[num], height: height, textValue: "\(value)", title: date))
                                var date = Date()
-                               date.addTimeInterval(TimeInterval(24*60*60*i))
+                               date.addTimeInterval(TimeInterval(24*60*60*(-15+i)))
                                result.append(DataEntry(color: colors[num], height: height, textValue: "\(value)", title: formatter.string(from: date)))
                            }
                            return result
