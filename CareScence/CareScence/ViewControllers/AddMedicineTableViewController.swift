@@ -21,6 +21,9 @@ class AddMedicineTableViewController: UITableViewController, UIPickerViewDelegat
         super.viewDidLoad()
         self.Frequency.delegate = self
         self.Frequency.dataSource = self
+        
+        MedName.font = UIFont(name:"Avenir", size:17)
+
         pickerData = ["Once a day", "Twice a day", "Three times a day"]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -63,7 +66,10 @@ class AddMedicineTableViewController: UITableViewController, UIPickerViewDelegat
             
             
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> 0fa20def9697026b86daf969158ab7604e01745f
         
     // MARK: - Table view data source
 
