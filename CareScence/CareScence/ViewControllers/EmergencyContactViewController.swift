@@ -52,3 +52,24 @@ extension String {
         }
     }
 }
+
+extension EmergencyContactViewController{
+    @IBAction func cancelToEmergencyContactTableViewController(_ segue: UIStoryboardSegue) {
+    }
+    
+    @IBAction func saveContactDetail(_ segue: UIStoryboardSegue) {
+        
+        
+        guard let emInfoTableViewController = segue.source as? EmergencyInfoTableViewController,
+            let contact = emInfoTableViewController.contact else {
+                return
+        }
+        
+        emergency = contact
+        NameLabel.text = emergency.name
+        EmailLabel.text = emergency.email
+        PhoneLabel.text = emergency.phoneNumber
+        ImageView.image = emergency.photo
+    }
+}
+

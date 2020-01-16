@@ -68,5 +68,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "988AEC57-32A4-4C00-AD10-D4008632932E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CareScence/BarChart/BarChartViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "generateEmptyDataEntries()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "988AEC57-32A4-4C00-AD10-D4008632932E - e0c87b785cf59fd4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CareScence.BarChartViewController.generateEmptyDataEntries() -&gt; Swift.Array&lt;CareScence.DataEntry&gt;"
+                  moduleName = "CareScence"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jddestine/Desktop/Redo/east-hostages/CareScence/CareScence/BarChart/BarChartViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "988AEC57-32A4-4C00-AD10-D4008632932E - 2a4b532f8df3b2cb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int) -&gt; () in CareScence.BarChartViewController.generateEmptyDataEntries() -&gt; Swift.Array&lt;CareScence.DataEntry&gt;"
+                  moduleName = "CareScence"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jddestine/Desktop/Redo/east-hostages/CareScence/CareScence/BarChart/BarChartViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1E15E44-5747-4841-830A-BB0D1746067B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CareScence/BarChart/BarChartViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "generateEmptyDataEntries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FA0768BA-5179-4390-A917-CAF97DCDD00A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CareScence/BarChart/BarChartViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "generateRandomDataEntries()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
