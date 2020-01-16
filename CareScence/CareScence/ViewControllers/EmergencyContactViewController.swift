@@ -17,7 +17,7 @@ class EmergencyContactViewController: UIViewController {
     fileprivate var application = UIApplication.shared
     
 
-    var emergency = EmergencyContact(name: "Jane Smith", email: "jane@abv.cr", photo: #imageLiteral(resourceName: "emergency-contact"), phoneNumber: "+31 6 12345678")
+    var emergency = EmergencyContact(name: "Jane Smith", email: "jane@abv.cr", photo: #imageLiteral(resourceName: "emergency-contact"), phoneNumber: "0031612345678")
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +25,7 @@ class EmergencyContactViewController: UIViewController {
     
     @IBAction func CallTpped(_ sender: Any) {
         
-        if let phoneURL = URL(string: "tel://0031612345678"){
+        if let phoneURL = URL(string: "tel://\(emergency.phoneNumber)"){
             if application.canOpenURL(phoneURL){
                 application.open(phoneURL, options:  [:], completionHandler: nil)
                 print("works")
