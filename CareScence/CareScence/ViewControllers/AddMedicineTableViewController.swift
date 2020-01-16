@@ -66,10 +66,7 @@ class AddMedicineTableViewController: UITableViewController, UIPickerViewDelegat
             
             
     }
-<<<<<<< HEAD
-    
-=======
->>>>>>> 0fa20def9697026b86daf969158ab7604e01745f
+
         
     // MARK: - Table view data source
 
