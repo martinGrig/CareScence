@@ -87,7 +87,7 @@
 		0E1C23DE23C8A48D001C2859 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		0E1C23E023C8A611001C2859 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		0E6A4B7923D055EE000378CD /* StepData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepData.swift; sourceTree = "<group>"; };
-		0EB60A5123A23ED8002BB4EF /* CareScence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareScence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB60A5123A23ED8002BB4EF /* CareSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EB60A5423A23ED8002BB4EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EB60A5623A23ED8002BB4EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0EB60A5823A23ED8002BB4EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 		0EB60A5223A23ED8002BB4EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0EB60A5123A23ED8002BB4EF /* CareScence.app */,
+				0EB60A5123A23ED8002BB4EF /* CareSense.app */,
 				3F6BE04723A3CE950083606E /* CareScence Widget.appex */,
 			);
 			name = Products;
@@ -279,7 +279,7 @@
 			);
 			name = CareScence;
 			productName = CareScence;
-			productReference = 0EB60A5123A23ED8002BB4EF /* CareScence.app */;
+			productReference = 0EB60A5123A23ED8002BB4EF /* CareSense.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3F6BE04623A3CE950083606E /* CareScence Widget */ = {
@@ -559,13 +559,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8D4GG5QHG;
 				INFOPLIST_FILE = CareScence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.jd.CareScence;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "SM-group-project";
+				PRODUCT_NAME = CareSense;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -577,13 +578,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8D4GG5QHG;
 				INFOPLIST_FILE = CareScence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.jd.CareScence;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "SM-group-project";
+				PRODUCT_NAME = CareSense;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -593,13 +595,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8D4GG5QHG;
 				INFOPLIST_FILE = "CareScence Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.jd.CareScence.CareScence-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "SM-group-project.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -611,13 +614,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8D4GG5QHG;
 				INFOPLIST_FILE = "CareScence Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.jd.CareScence.CareScence-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "SM-group-project.widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
