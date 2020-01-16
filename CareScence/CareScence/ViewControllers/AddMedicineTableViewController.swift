@@ -21,6 +21,9 @@ class AddMedicineTableViewController: UITableViewController, UIPickerViewDelegat
         super.viewDidLoad()
         self.Frequency.delegate = self
         self.Frequency.dataSource = self
+        
+        MedName.font = UIFont(name:"Avenir", size:17)
+
         pickerData = ["Once a day", "Twice a day", "Three times a day"]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -55,11 +58,19 @@ class AddMedicineTableViewController: UITableViewController, UIPickerViewDelegat
             let formatter = DateFormatter()
             formatter.dateFormat = "HH:mm"
             let time = formatter.string(from: Time.date)
+            var frequency = [""]
             if Monday.isOn{
-            med = Medicine.init(name: name!, day: ["Monday"], time: time, frequency: d as! String)
+                frequency.append("Monday")
             }
+            med = Medicine.init(name: name!, day: ["Monday"], time: time, frequency: d as! String)
+            
+            
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> 0fa20def9697026b86daf969158ab7604e01745f
+        
     // MARK: - Table view data source
 
     
@@ -119,5 +130,43 @@ class AddMedicineTableViewController: UITableViewController, UIPickerViewDelegat
     }
     */
 
-}
+    }
+    
+    func notification(_ title: String, _ body: String, _ hour: Int, _ minutes: Int){
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { granted, error in
+            // Enable or disable features based on authorization.
+        }
+        
+        let lunchContent = UNMutableNotificationContent()
+          lunchContent.title = title
+          lunchContent.body = body
+          
+          // Configure the recurring date.
+          var lunchDateComponents = DateComponents()
+          lunchDateComponents.calendar = Calendar.current
+
+          //dateComponents.weekday = 5  // 3 = Tuesday
+          lunchDateComponents.hour = hour   // hours
+          lunchDateComponents.minute = minutes   // minutes
+             
+          // Create the trigger as a repeating event.
+          let trigger = UNCalendarNotificationTrigger(
+                   dateMatching: lunchDateComponents, repeats: true)
+        
+        // Create the request
+        let uuidString = UUID().uuidString
+        let request = UNNotificationRequest(identifier: uuidString,
+                    content: lunchContent, trigger: trigger)
+
+        // Schedule the request with the system.
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.add(request) { (error) in
+           if error != nil {
+              // Handle any errors.
+           }
+        }
+        
+    }
 }
