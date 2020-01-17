@@ -631,7 +631,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" image="battery" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-7B-3hA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" image="iphone-battery-icon" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-7B-3hA">
                                 <rect key="frame" x="27" y="164" width="360" height="242"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="battery level is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0H-qM-jjZ">
@@ -1216,7 +1216,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOI-kr-KeM">
                                 <rect key="frame" x="74" y="649" width="267" height="44"/>
-                                <color key="backgroundColor" red="0.25499778989999999" green="0.50832062960000002" blue="0.26662281160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
                                 <state key="normal" title="Call">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -1600,11 +1600,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vCJ-E1-pyo">
-<<<<<<< HEAD
-                                                    <rect key="frame" x="-15" y="-60" width="412" height="162"/>
-=======
                                                     <rect key="frame" x="-14" y="-60" width="412" height="162"/>
->>>>>>> 10945690db5b15d1bd27e7b4eb879fd80abd6cbd
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 </datePicker>
                                             </subviews>
@@ -1827,7 +1823,6 @@ there is a 65% chance of you falling.</string>
     </scenes>
     <resources>
         <image name="achievements - selected" width="25" height="25"/>
-        <image name="battery" width="1536" height="1536"/>
         <image name="emergency-contact" width="236" height="236"/>
         <image name="emergency_pic" width="512" height="512"/>
         <image name="exercise-heel-to-toe-walk" width="1280" height="720"/>
@@ -1836,6 +1831,7 @@ there is a 65% chance of you falling.</string>
         <image name="exercises today" width="512" height="512"/>
         <image name="home - default" width="25" height="25"/>
         <image name="home - selected" width="25" height="25"/>
+        <image name="iphone-battery-icon" width="360" height="360"/>
         <image name="news - default" width="25" height="25"/>
         <image name="pill" width="512" height="512"/>
         <image name="progress circle" width="200" height="200"/>
