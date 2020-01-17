@@ -16,20 +16,18 @@ class AccountTableViewController: UITableViewController,  UINavigationController
     var Uphoto : UIImage?
    
     
-  let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
     
-    switch cameraAuthorizationStatus {
-           case .notDetermined: requestCameraPermission()
-           case .authorized: presentCamera()
-           case .restricted, .denied: alertCameraAccessNeeded()
-           }
-           requestCameraPermission()
-           presentCamera()
-       
-       
-           
-
-           
+    @IBAction func TakePic(_ sender: Any) {
+        let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        
+        switch cameraAuthorizationStatus {
+               case .notDetermined: requestCameraPermission()
+               case .authorized: presentCamera()
+               case .restricted, .denied: alertCameraAccessNeeded()
+               }
+               requestCameraPermission()
+               presentCamera()
+    }        
 func alertCameraAccessNeeded() {
     let settingsAppURL = URL(string: UIApplication.openSettingsURLString)!
  
