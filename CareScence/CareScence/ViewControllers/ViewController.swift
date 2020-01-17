@@ -8,10 +8,19 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
+protocol VCDelegate: class{
+   func dailyWorkoutsDone(sender: DailyWorkoutViewController)
+}
+
+class ViewController: UIViewController, VCDelegate {
+    
+    @IBOutlet weak var dailyWorkoutLabel: UILabel!
+    @IBOutlet weak var dailyWorkoutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
+        
         // Notifications.
         notification("Meal Time", "Most important meal of the day! BREAKFAST!!!", 8, 30)
         notification("Meal Time", "Its time for lunch", 12, 30)
@@ -21,7 +30,27 @@ class ViewController: UIViewController {
         notification("Time to take your meds!", "Don`t forget to take care of your health", 10, 30)
         notification("Move your body!", "Did you do your exercise today", 14, 48)
         
+        // Change exercise button color.
+        switch(DailyWorkout.shared.dailyDone)
+        {
+        case 0:
+            dailyWorkoutButton.backgroundColor = #colorLiteral(red: 1, green: 0.3725112081, blue: 0.3980468512, alpha: 1)
+            break
+            
+        case 1:
+            dailyWorkoutButton.backgroundColor = #colorLiteral(red: 1, green: 0.9366633296, blue: 0.287689209, alpha: 1)
+            break
+            
+        case 2:
+            dailyWorkoutButton.backgroundColor = #colorLiteral(red: 0.7751188874, green: 0.9150382876, blue: 0.4332845807, alpha: 1)
+            break
+            
+        default:
+            break
+        }
+        
     }
+    
     func notification(_ title: String, _ body: String, _ hour: Int, _ minutes: Int){
         
         let center = UNUserNotificationCenter.current()
@@ -59,14 +88,12 @@ class ViewController: UIViewController {
         }
         
     }
-        // Do any additional setup after loading the view.
-        //let myUrl = URL(string: "https://www.youtube.com/watch?v=0bmE9XY3sOc")!
-                
-             //let myRequest = URLRequest(url:myUrl)
-           //  webkit.load(myRequest)
-            
-            
-            
+        
+    func dailyWorkoutsDone(sender: DailyWorkoutViewController) {
+        self.dailyWorkoutLabel.text = "2/2"
+            self.viewDidLoad()
+        print("delegate func called!!!")
+    }
 }
 
 extension ViewController{
@@ -80,6 +107,15 @@ extension ViewController{
                 return
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           // Get the new view controller using segue.destinationViewController.
+           // Pass the selected object to the new view controller.
+           if segue.identifier == "goToDailyWorkouts" {
+               let vc : DailyWorkoutViewController = segue.destination as! DailyWorkoutViewController
+               vc.delegate = self
+           }
+       }
 }
 
 extension UINavigationBar {

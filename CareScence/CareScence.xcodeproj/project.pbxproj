@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		0EB60A5923A23ED8002BB4EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB60A5823A23ED8002BB4EF /* ViewController.swift */; };
 		0EB60A5E23A23EDA002BB4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB60A5D23A23EDA002BB4EF /* Assets.xcassets */; };
 		0EB60A6123A23EDA002BB4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EB60A5F23A23EDA002BB4EF /* LaunchScreen.storyboard */; };
+		3440F3F3841542835EA6BD30 /* Pods_CareScence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B34E90B1BDC1F520BC58847 /* Pods_CareScence.framework */; };
 		3F05C01D23A55A8300F49EA6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05C01C23A55A8300F49EA6 /* SettingsTableViewController.swift */; };
 		3F05C01F23A6996D00F49EA6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F05C01E23A6996D00F49EA6 /* User.swift */; };
 		3F05C02123A6A24800F49EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F05C02023A6A24800F49EA6 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		3F3D338023C75EEB004DAE6A /* MedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */; };
 		3F3D338223C75EFE004DAE6A /* AddMedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */; };
 		3F3D338423C75FA7004DAE6A /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D338323C75FA7004DAE6A /* Medicine.swift */; };
+		3F530B0123D1C6A500D89980 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3F530B0023D1C6A500D89980 /* Podfile */; };
 		3F5BDD2823C73B870037E24B /* DailyWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */; };
 		3F5BDD2C23C73E420037E24B /* Achievment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2B23C73E420037E24B /* Achievment.swift */; };
 		3F5BDD2E23C73F750037E24B /* AchievmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */; };
@@ -104,6 +106,7 @@
 		3F3D337F23C75EEB004DAE6A /* MedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewController.swift; sourceTree = "<group>"; };
 		3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicineTableViewController.swift; sourceTree = "<group>"; };
 		3F3D338323C75FA7004DAE6A /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		3F530B0023D1C6A500D89980 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkoutViewController.swift; sourceTree = "<group>"; };
 		3F5BDD2B23C73E420037E24B /* Achievment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievment.swift; sourceTree = "<group>"; };
 		3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievmentTableViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +126,9 @@
 		3FBB15EA23A7DE39008A4505 /* EmergencyContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContact.swift; sourceTree = "<group>"; };
 		3FCECDCE23D0642F00188B40 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
 		3FE9522123D0869C00E984E3 /* EmergencyInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyInfoTableViewController.swift; sourceTree = "<group>"; };
+		5B34E90B1BDC1F520BC58847 /* Pods_CareScence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareScence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		926C57A278A383FB526F840B /* Pods-CareScence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareScence.debug.xcconfig"; path = "Target Support Files/Pods-CareScence/Pods-CareScence.debug.xcconfig"; sourceTree = "<group>"; };
+		A53104066C93484DBB4FF23F /* Pods-CareScence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareScence.release.xcconfig"; path = "Target Support Files/Pods-CareScence/Pods-CareScence.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3440F3F3841542835EA6BD30 /* Pods_CareScence.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +170,8 @@
 		0E1C23EA23C8C5AE001C2859 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */,
 				3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */,
+				3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */,
 				3FA6C4EC23A3C4D800673C90 /* ExerciseTableViewController.swift */,
 				3F05C02223A6AD2500F49EA6 /* AccountTableViewController.swift */,
 				3FA6C4EE23A3D3B000673C90 /* ExerciseWebViewController.swift */,
@@ -209,10 +216,12 @@
 		0EB60A4823A23ED7002BB4EF = {
 			isa = PBXGroup;
 			children = (
+				3F530B0023D1C6A500D89980 /* Podfile */,
 				0EB60A5323A23ED8002BB4EF /* CareScence */,
 				3F6BE04B23A3CE950083606E /* CareScence Widget */,
 				3F6BE04823A3CE950083606E /* Frameworks */,
 				0EB60A5223A23ED8002BB4EF /* Products */,
+				3D97C806E1222E9F622B82E8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,10 +251,20 @@
 			path = CareScence;
 			sourceTree = "<group>";
 		};
+		3D97C806E1222E9F622B82E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				926C57A278A383FB526F840B /* Pods-CareScence.debug.xcconfig */,
+				A53104066C93484DBB4FF23F /* Pods-CareScence.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3F6BE04823A3CE950083606E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				3F6BE04923A3CE950083606E /* NotificationCenter.framework */,
+				5B34E90B1BDC1F520BC58847 /* Pods_CareScence.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -267,10 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EB60A6523A23EDA002BB4EF /* Build configuration list for PBXNativeTarget "CareScence" */;
 			buildPhases = (
+				818EF05E12E6E5092CAC3EB1 /* [CP] Check Pods Manifest.lock */,
 				0EB60A4D23A23ED8002BB4EF /* Sources */,
 				0EB60A4E23A23ED8002BB4EF /* Frameworks */,
 				0EB60A4F23A23ED8002BB4EF /* Resources */,
 				3F6BE05523A3CE950083606E /* Embed App Extensions */,
+				38DC4D8D08CFB361D80CEB41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,6 +364,7 @@
 			files = (
 				3F05C02123A6A24800F49EA6 /* Main.storyboard in Resources */,
 				0EB60A6123A23EDA002BB4EF /* LaunchScreen.storyboard in Resources */,
+				3F530B0123D1C6A500D89980 /* Podfile in Resources */,
 				0EB60A5E23A23EDA002BB4EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +378,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38DC4D8D08CFB361D80CEB41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareScence/Pods-CareScence-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareScence/Pods-CareScence-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CareScence/Pods-CareScence-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		818EF05E12E6E5092CAC3EB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareScence-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0EB60A4D23A23ED8002BB4EF /* Sources */ = {
@@ -555,6 +619,7 @@
 		};
 		0EB60A6623A23EDA002BB4EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 926C57A278A383FB526F840B /* Pods-CareScence.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -574,6 +639,7 @@
 		};
 		0EB60A6723A23EDA002BB4EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53104066C93484DBB4FF23F /* Pods-CareScence.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

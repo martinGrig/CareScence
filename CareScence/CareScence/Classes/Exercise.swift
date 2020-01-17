@@ -14,3 +14,9 @@ struct Exercise{
     let photo: UIImage
     let url: String
 }
+
+class DailyWorkout{
+    static let shared = DailyWorkout()
+    
+    var dailyDone = 1
+}
