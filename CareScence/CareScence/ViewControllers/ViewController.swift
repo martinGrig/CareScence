@@ -91,7 +91,7 @@ class ViewController: UIViewController, VCDelegate {
         
     func dailyWorkoutsDone(sender: DailyWorkoutViewController) {
         self.dailyWorkoutLabel.text = "2/2"
-            self.viewDidLoad()
+        self.viewDidLoad()
         print("delegate func called!!!")
     }
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
