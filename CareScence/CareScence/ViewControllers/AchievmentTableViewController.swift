@@ -13,7 +13,7 @@ class AchievmentTableViewController: UITableViewController {
         var achievments: [Achievment] = [
             
             Achievment(title: "Gym Rat", assignment: "Have a 5 day exercise streak", photo: #imageLiteral(resourceName: "achievements - gym rat") , progress: 0.6,fake: 3, max: 5),
-            Achievment(title: "Busy Bee", assignment: "Take 1000 steps", photo: #imageLiteral(resourceName: "achievements - busy bee") , progress: 0.94, fake: 446, max: 500),
+            Achievment(title: "Busy Bee", assignment: "Take 500 steps", photo: #imageLiteral(resourceName: "achievements - busy bee") , progress: 0.94, fake: 446, max: 500),
             Achievment(title: "Physician`s Favourite", assignment: "Never miss a pill for a week", photo: #imageLiteral(resourceName: "achievements - physician's pet") , progress: 0.7, fake: 5, max: 7),
             Achievment(title: "Defying Gravity", assignment: "Fall free for one month", photo: #imageLiteral(resourceName: "achievements - defying gravity") , progress: 0.15, fake: 5, max: 30)
             ]
