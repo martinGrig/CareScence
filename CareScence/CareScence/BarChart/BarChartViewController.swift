@@ -10,7 +10,7 @@ import UIKit
 
 class BarChartViewController: UIViewController {
 
-  let url = "https://api.myjson.com/bins/xn3qe"
+  let url = "https://api.myjson.com/bins/19qi46"
     var DataStep = [StepData]()
     
     @IBOutlet weak var basicBarChart: BasicBarChart!
@@ -97,16 +97,16 @@ class BarChartViewController: UIViewController {
                     value = self.DataStep[i].Steps
 
                     
-                    if(value > 5000){
+                    if(value >= 500){
                         num = 0
-                    }else if (value < 3000){
+                    }else if (value < 300){
                         num = 5
                     }else{
                         num = 3
                     }
                     
                                   
-                               let height: Float = Float(value) / 10000.0
+                               let height: Float = Float(value) / 1000.0
 
                                let formatter = DateFormatter()
                                formatter.dateFormat = "d MMM"
