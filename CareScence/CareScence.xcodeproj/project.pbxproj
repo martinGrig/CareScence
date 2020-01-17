@@ -34,6 +34,7 @@
 		3F3D338223C75EFE004DAE6A /* AddMedicineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */; };
 		3F3D338423C75FA7004DAE6A /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D338323C75FA7004DAE6A /* Medicine.swift */; };
 		3F530B0123D1C6A500D89980 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3F530B0023D1C6A500D89980 /* Podfile */; };
+		3F530B0523D2039000D89980 /* WalkAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F530B0423D2039000D89980 /* WalkAnalysisViewController.swift */; };
 		3F5BDD2823C73B870037E24B /* DailyWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */; };
 		3F5BDD2C23C73E420037E24B /* Achievment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2B23C73E420037E24B /* Achievment.swift */; };
 		3F5BDD2E23C73F750037E24B /* AchievmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */; };
@@ -107,6 +108,7 @@
 		3F3D338123C75EFE004DAE6A /* AddMedicineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicineTableViewController.swift; sourceTree = "<group>"; };
 		3F3D338323C75FA7004DAE6A /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		3F530B0023D1C6A500D89980 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3F530B0423D2039000D89980 /* WalkAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkAnalysisViewController.swift; sourceTree = "<group>"; };
 		3F5BDD2723C73B870037E24B /* DailyWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkoutViewController.swift; sourceTree = "<group>"; };
 		3F5BDD2B23C73E420037E24B /* Achievment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievment.swift; sourceTree = "<group>"; };
 		3F5BDD2D23C73F750037E24B /* AchievmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievmentTableViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		0E1C23EA23C8C5AE001C2859 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F530B0423D2039000D89980 /* WalkAnalysisViewController.swift */,
 				3FA6C4E023A3A9AD00673C90 /* WebViewController.swift */,
 				3F33ECBF23A398B4007091C5 /* NewsTableViewController.swift */,
 				3FA6C4EC23A3C4D800673C90 /* ExerciseTableViewController.swift */,
@@ -426,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F530B0523D2039000D89980 /* WalkAnalysisViewController.swift in Sources */,
 				3F05C01F23A6996D00F49EA6 /* User.swift in Sources */,
 				3F3D338423C75FA7004DAE6A /* Medicine.swift in Sources */,
 				0E1C23E123C8A611001C2859 /* BarChartViewController.swift in Sources */,
