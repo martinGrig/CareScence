@@ -41,7 +41,7 @@ class BarChartViewController: UIViewController {
             }
              
              p = p + 1
-            if(p == 3){
+            if(p == 2){
                 
                 timer.invalidate()
                 check = true;
