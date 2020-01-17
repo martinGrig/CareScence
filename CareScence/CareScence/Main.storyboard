@@ -631,7 +631,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" image="iphone-battery-icon" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-7B-3hA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" image="battery" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-7B-3hA">
                                 <rect key="frame" x="27" y="164" width="360" height="242"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="battery level is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0H-qM-jjZ">
@@ -1827,6 +1827,7 @@ there is a 65% chance of you falling.</string>
     </scenes>
     <resources>
         <image name="achievements - selected" width="25" height="25"/>
+        <image name="battery" width="1536" height="1536"/>
         <image name="emergency-contact" width="236" height="236"/>
         <image name="emergency_pic" width="512" height="512"/>
         <image name="exercise-heel-to-toe-walk" width="1280" height="720"/>
@@ -1835,7 +1836,6 @@ there is a 65% chance of you falling.</string>
         <image name="exercises today" width="512" height="512"/>
         <image name="home - default" width="25" height="25"/>
         <image name="home - selected" width="25" height="25"/>
-        <image name="iphone-battery-icon" width="360" height="360"/>
         <image name="news - default" width="25" height="25"/>
         <image name="pill" width="512" height="512"/>
         <image name="progress circle" width="200" height="200"/>
