@@ -972,6 +972,37 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="PROFILE IMAGE" id="hAc-xW-sqR">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" id="YHs-U9-fpM">
+                                        <rect key="frame" x="0.0" y="354" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YHs-U9-fpM" id="s0G-mV-zLt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ime-Ns-vKX">
+                                                    <rect key="frame" x="10" y="2" width="394" height="30.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <state key="normal" title="TAKE A PICTURE">
+                                                        <color key="titleColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="TakePic:" destination="r8v-hJ-3cB" eventType="touchUpInside" id="VOa-fF-cVb"/>
+                                                        <action selector="TakePic:" destination="ujm-vh-eeI" eventType="touchUpInside" id="fWt-KJ-XvD"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ime-Ns-vKX" secondAttribute="trailing" constant="10" id="Xlj-GA-coN"/>
+                                                <constraint firstItem="ime-Ns-vKX" firstAttribute="leading" secondItem="s0G-mV-zLt" secondAttribute="leading" constant="10" id="YVy-4J-rGo"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ime-Ns-vKX" secondAttribute="bottom" constant="0.5" id="YpL-bF-E5K"/>
+                                                <constraint firstItem="ime-Ns-vKX" firstAttribute="top" secondItem="s0G-mV-zLt" secondAttribute="topMargin" constant="-9" id="aHg-xW-lxo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="r8v-hJ-3cB" id="0h2-4u-yBv"/>
@@ -1786,36 +1817,6 @@ there is a 65% chance of you falling.</string>
                                                     <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 </textField>
                                             </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                            <tableViewSection headerTitle="PROFILE IMAGE" id="4rz-Tb-aEG">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" id="4du-Sb-pyU">
-                                        <rect key="frame" x="0.0" y="354" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4du-Sb-pyU" id="HHR-lY-C8c">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NM5-xh-GRX">
-                                                    <rect key="frame" x="10" y="2" width="394" height="30.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <state key="normal" title="TAKE A PICTURE">
-                                                        <color key="titleColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="TakePic:" destination="ujm-vh-eeI" eventType="touchUpInside" id="DOW-a3-IVH"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="NM5-xh-GRX" secondAttribute="bottom" constant="0.5" id="KUo-4H-Gg3"/>
-                                                <constraint firstItem="NM5-xh-GRX" firstAttribute="leading" secondItem="HHR-lY-C8c" secondAttribute="leading" constant="10" id="Yrf-G6-bxL"/>
-                                                <constraint firstItem="NM5-xh-GRX" firstAttribute="top" secondItem="HHR-lY-C8c" secondAttribute="topMargin" constant="-9" id="sTR-9O-qhD"/>
-                                                <constraint firstAttribute="trailing" secondItem="NM5-xh-GRX" secondAttribute="trailing" constant="10" id="tE3-86-cuU"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
