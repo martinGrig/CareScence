@@ -10,11 +10,13 @@ import UIKit
 
 class DailyWorkoutViewController: UIViewController {
     
+    weak var delegate: VCDelegate?
+
     var exercise: Exercise = Exercise(title: "Toe stand", photo: #imageLiteral(resourceName: "exercise-toe-stand") , url: "https://www.youtube.com/watch?v=04zZLGcrN5Y")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -23,6 +25,8 @@ class DailyWorkoutViewController: UIViewController {
                 else {
                     return
             }
+        DailyWorkout.shared.dailyDone = 2
+        self.delegate?.dailyWorkoutsDone(sender:self)
         exerciseWebViewController.exercise = self.exercise
         }
         
