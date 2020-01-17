@@ -27,6 +27,15 @@ class ExerciseTableViewController: UITableViewController {
                 exerciseWebViewController.exercise = exercises[index]
             }
             
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
+    {
+        if event?.subtype == UIEvent.EventSubtype.motionShake
+        {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let EmergencyContactViewController = storyBoard.instantiateViewController(withIdentifier: "emergencyContactViewController") as! EmergencyContactViewController
+            self.present(EmergencyContactViewController, animated: true, completion: nil)
+        }
+    }
         }
 
     extension ExerciseTableViewController {
